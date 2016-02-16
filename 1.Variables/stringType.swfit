@@ -1,0 +1,14 @@
+// 문자열 길이
+var str = "Hello"
+// var strLength = count(str) // 에러
+var strLength2 = str.characters.count
+print(strLength2)
+
+// 타입 변환
+var numStr = "123"
+var numVal = Int(numStr)
+print(numVal)
+
+var numStr2 = "3.14"
+var doubleVal = Double(numStr2)
+print(doubleVal)

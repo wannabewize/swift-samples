@@ -13,6 +13,10 @@ var floatVar = 3.14
 // Double 타입으로 변수 선언
 var doubleVar : Double = 3.14
 
+var intVar2 : Int
+intVar2 = 10
+print(intVar2)
+
 //
 // 타입 에러
 //
@@ -23,3 +27,11 @@ var doubleVar : Double = 3.14
 
 // var floatVar = 3.14
 // intVar = floatVar
+
+
+//
+// 초기화 되지 않은 변수 사용 에러
+//
+
+// var uninitalizedVar : Int
+// print(uninitalizedVar)
