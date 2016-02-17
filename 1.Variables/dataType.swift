@@ -1,28 +1,29 @@
+// Bool
+var boolVal = true
+// Type Error
+// var boolVar2 : Bool = 1
+
 // 정수형 타입
-var intType = 1 // 기본 Int 타입
-var uintType : UInt = 2
+var intVal = 1 // 기본 Int 타입
+var uintVal : UInt = 2
 
-var int8Type : Int8 = 3
-var uint8Type : UInt8 = 4
+var int8Val : Int8 = 3
+var uint8Val : UInt8 = 4
 
-var int16Type : Int16 = 5
-var int32Type : Int32 = 6
-var int64Type : Int64 = 7
+var int16Val : Int16 = 5
+var int32Val : Int32 = 6
+var int64Val : Int64 = 7
 
-// 2진수 다루기
-var binaryVar = 0b1011 // 11
-print("binary Value : ", binaryVar)
-// 8진수 다루기
-var octetVar = 0o77 // 63
-print("octec Value : ",octetVar)
-// 16진수 다루기
-var hexVar = 0xFF // 255
-print("hex Value : ",hexVar)
+// Overflow Error : Int8의 크기는 -128~127
+// int8Val = 128 
 
-// 실수형 타입
-var floatType : Float = 3.14 // 기본 Double 타입
-var doubleType = 3.14159
-var floatType2 = 3e10 // 지수형 표기. 300.0
+// 타입 변환
+intVal = Int(int8Val)
+
+
+// 서로 다른 타입의 값 대입 불가
+// intType = int16Type
+// int32Type = int8Type // 더 큰 타입으로 대입하는 것도 불가
 
 // 타입 크기 
 print("Int size   : ", sizeof(Int), " min : ", Int.min, " max : ", Int.max)
@@ -32,21 +33,25 @@ print("int16 size : ", sizeof(Int16));
 print("int32 size : ", sizeof(Int32));
 print("int64 size : ", sizeof(Int64));
 
+// 2진수 다루기
+var binaryVal = 0b1011 // 11
+print("binary Value : ", binaryVal)
+// 8진수 다루기
+var octetVal = 0o77 // 63
+print("octec Value : ",octetVal)
+// 16진수 다루기
+var hexVal = 0xFF // 255
+print("hex Value : ",hexVal)
+
+// 실수형 타입
+var doubleVal = 3.14 // 기본 Double 타입
+var floatVal : Float = 36.5
+
+var floatVal2 = 3e10 // 지수형 표기. 300.0
+
 // 타입 변환
-intType = Int(int8Type)
-floatType = Float(doubleType)
+floatVal = Float(doubleVal)
 
-
-//
-// ERROR
-//
-
-// Overflow Error : Int8의 크기는 -128~127
-// int8Type = 128 
-
-// 서로 다른 타입
-// intType = int16Type
-// int32Type = int8Type // 더 큰 타입으로 대입하는 것도 불가
-
-// 서로 다른 타입 간 연산도 에러
-// var ret = floatType + doubleType
+doubleVal + Double(floatVal);
+// 에러 : 서로 다른 타입 간 연산
+// var ret = floatVal + doubleVal
