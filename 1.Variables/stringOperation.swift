@@ -20,4 +20,3 @@ var intVal = 1234
 let uppercaseStr = str.uppercaseString
 let lowercaseStr = str.lowercaseString
 print(uppercaseStr, lowercaseStr)
-
