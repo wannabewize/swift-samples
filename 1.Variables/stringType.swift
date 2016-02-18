@@ -31,3 +31,13 @@ let acuteAccent: Character = "\u{0301}"
 strVal.append(acuteAccent) // café
 print(strVal);
 
+
+
+// 타입 변환
+var numStr = "123"
+var numVal = Int(numStr)
+print(numVal)
+
+var numStr2 = "3.14"
+var doubleVal = Double(numStr2)
+print(doubleVal)
