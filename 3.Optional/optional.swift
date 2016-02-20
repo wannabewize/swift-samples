@@ -1,21 +1,32 @@
-// 에러
-// var var1 : Int = nil
-
-var optionalVar : Int? = nil
-
-var optionalVar2 : Int?
-print(optionalVar2)
+var optionalStr : String? = "ABC"
+//optionalStr.lowercaseString
 
 
-var normalStr : String = "123"
-print("normal Str : ", normalStr.toInt())
+if let str = optionalStr {
+   print(str.lowercaseString)
+}
 
-var optionalStr : String? = "123"
-// var intVal = optionalStr.toInt() // 에러
-var intVal2 = optionalStr!.toInt()
-print(intVal2)
+func myFunc(arg : String?) {
+   guard let str = arg else {
+      print("파라미터가 nil")
+      return;
+   }
+   
+   // str은 옵셔널 타입이 아니다. unwrapped
+   print(str.lowercaseString)
+}
+
+myFunc(nil)
 
 
-let optionalCon : String? = "123"
-print(optionalCon)
+var userSelectedColor : String?
+// nil 이면 Red를 사용
+var colorName = userSelectedColor ?? "Red"
 
+colorName // "Red"
+
+
+// nil 원소를 다룰 수 있는 배열
+let array : [String?] = ["A", nil, "C"]
+let element = array[0] // element는 옵셔널 타입
+print(element)
