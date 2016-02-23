@@ -1,26 +1,46 @@
-class MyClass {
-   var value = "Closure Capturing"
-   deinit {
-      print("MyClass 객체 해제")
+func greeting() -> () -> () {
+   let str = "Hello"
+   return {
+//      () -> () in
+      print(str)
    }
 }
 
-//func myFunction() {
-//   let obj = MyClass()
-//   print(obj.value)
-//}
-//
-//myFunction()
+let str = "Good Morning"
+let ret = greeting()
+ret() // "Hello" 출력
 
 
-func myFunction2() -> () -> () {
-   let obj = MyClass()
-   return { () -> () in
-      print(obj.value)
+func increment() -> (Int) -> Int {
+   var count = 0
+   return {
+      count += $0
+      return count
    }
 }
 
-var closure1 = myFunction2()
 
-var closure2 : (() -> ())! = myFunction2()
-closure2 = nil
+
+import Foundation
+
+// UpDown 게임 생성기
+func makeUpdownGame(num : Int) -> Int -> String {
+   var trial = 0;
+   // 주어진 범위 내 난수 생성. Foundation 프레임워크 필요
+   let goal = Int(arc4random_uniform(UInt32(num)))
+   
+   print("게임 생성됨 - Goal : \(goal)")
+   return {
+      if $0 < goal {
+         return "시도 횟수 : \(++trial) 결과 : UP"
+      }
+      else if $0 > goal {
+         return "시도 횟수 : \(++trial) 결과 : Down"
+      }
+      return "시도 횟수 : \(trial) Bingo"
+   }
+}
+
+let game = makeUpdownGame(10)
+game(5)
+game(8)
