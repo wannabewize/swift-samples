@@ -1,0 +1,18 @@
+{
+    "device": [
+        {
+            "name": "iPhone5s",
+            "spec": {
+                "screen": 4,
+                "cpu": "a7"
+            }
+        },
+        {
+            "name": "iPad Air",
+            "spec": {
+                "screen": 9.8,
+                "cpu": "a7"
+            }
+        }
+    ]
+}
