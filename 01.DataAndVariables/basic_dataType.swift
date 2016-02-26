@@ -52,6 +52,6 @@ var floatVal2 = 3e10 // 지수형 표기. 300.0
 // 타입 변환
 floatVal = Float(doubleVal)
 
-doubleVal + Double(floatVal);
+print("double + Double(float) : ",doubleVal + Double(floatVal));
 // 에러 : 서로 다른 타입 간 연산
 // var ret = floatVal + doubleVal

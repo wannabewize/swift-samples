@@ -7,19 +7,20 @@ var dic3 : [String: Int] = ["일" : 1, "이" : 2, "삼" : 3]
 // 빈 Dictionary 객체
 var emptyDic = [Int: Int]()
 
-dic2
-dic3
-dic
+print("dic : ", dic)
+print("dic2 : ", dic2)
+print("dic3 : ", dic3)
 
-dic.count
-emptyDic.count
+
+print("dic.count : ", dic.count)
+print("emptyDic.count : ", emptyDic.count)
 
 
 // 딕셔너리 항목 접근. 배열처럼 보일 수도 있다.
-dic["1월"] // "January"
-dic2[1] // "One"
+print("dic[1월] : ", dic["1월"]) // "January"
+print("dic2[1] : ", dic2[1]) // "One"
 // 없는 키에 접근
-dic3["사"] // nil
+print("dic[사] : ", dic3["사"]) // nil
 
 
 dic["4월"] = "april"
@@ -29,8 +30,8 @@ dic["5월"] = "May"
 dic["4월"] = "잔인한 달"
 dic.updateValue("계절의 여왕", forKey: "5월")
 
-dic
+print("dic : ", dic)
 
 dic.removeValueForKey("2월")
 dic["3월"] = nil
-dic
+print("dic[3월] = nil : ", dic)

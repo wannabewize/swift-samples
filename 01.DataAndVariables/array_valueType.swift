@@ -7,5 +7,5 @@ if array1 == array2 {
 
 array1.append(4)
 
-array1 // [1, 2, 3, 4]
-array2 // [1, 2, 3]
+print("array1 : ", array1) // [1, 2, 3, 4]
+print("array2 : ", array2) // [1, 2, 3]

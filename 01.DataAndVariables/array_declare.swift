@@ -7,9 +7,9 @@ var emptyArray2 = Array<Double>()
 var emtpyArray3 : [String] = []
 
 
-intArray
-intArray.count
-emptyArray.isEmpty
+print("intArray : ",intArray)
+print("count : ", intArray.count)
+print("isEmpty : ",emptyArray.isEmpty)
 
 
 let element1 = intArray[0] // 1

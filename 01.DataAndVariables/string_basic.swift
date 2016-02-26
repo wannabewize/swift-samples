@@ -22,16 +22,11 @@ let str4 = "1 + 2 = \(1+2)"
 print("interpolation : ", str3, str4)
 
 
-// characters - Character Collection
-print(str.characters[3])
-
 var strVal = "cafe"
 
 let acuteAccent: Character = "\u{0301}"
 strVal.append(acuteAccent) // café
 print(strVal);
-
-
 
 // 타입 변환
 var numStr = "123"
@@ -41,3 +36,14 @@ print(numVal)
 var numStr2 = "3.14"
 var doubleVal = Double(numStr2)
 print(doubleVal)
+
+
+//
+// 타입 변환
+//
+
+var strFromInt = String(100)
+print(strFromInt)
+
+var strFromBool = String(true)
+print(strFromBool)

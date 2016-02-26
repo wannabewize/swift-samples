@@ -32,8 +32,13 @@ range4 // 6..<8
 
 let subStr1 = nsStr.substringFromIndex(3)
 
+// 시작 인덱스. String.Index 타입. 0에서 3뒤로.
 let index = swiftStr.startIndex.advancedBy(3)
 let subStr2 = swiftStr.substringFromIndex(index)
+
+// String.Index의 범위
+let range5 : Range<String.Index> = swiftStr.startIndex ..< swiftStr.startIndex.advancedBy(5)
+let subStr3 = swiftStr.substringWithRange(range5) // "Hello"
 
 
 // Appending

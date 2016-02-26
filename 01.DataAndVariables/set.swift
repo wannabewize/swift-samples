@@ -9,21 +9,22 @@ beverage.insert("Soda")
 beverage.remove("Milk")
 
 
-beverage // {"Juice", "soda", "Coke"}
-beverage.count // 3
-beverage.contains("Coke")
-beverage.contains("Sprite")
+print("beverage : ", beverage) // {"Juice", "soda", "Coke"}
+print("beverage.count : ", beverage.count) // 3
+print("beverage.contains(Coke) : ", beverage.contains("Coke"))
+print("beverage.contains(Sprite) : ", beverage.contains("Sprite"))
 
-beverage.first
+print("beverage.first : ", beverage.first)
 
 
 let index = beverage.startIndex
-beverage[index]
-beverage[index.successor()]
+print("beverage[index] : ", beverage[index])
+print("beverage[index.successor()] : ", beverage[index.successor()])
 
-beverage
+
 beverage.insert("Coke")
+print("beverage, after insert(Coke) : ", beverage)
 
 let beverageArray = Array(beverage)
-beverageArray[0]
-beverageArray[1]
+print("beverage->Array[0] : ", beverageArray[0])
+print("beverage->Array[1] : ", beverageArray[1])

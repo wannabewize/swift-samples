@@ -1,14 +1,9 @@
-
-var strFromInt = String(100)
-print(strFromInt)
-
-var strFromBool = String(true)
-print(strFromBool)
-
 var str = "I \u{2665} Swift"
 let str2 = "가"
 
+//
 // CharacterView
+//
 print("== CharacterView ")
 print("Length : ", str.characters.count, str2.characters.count)
 print("First Character : ", str2.characters[str2.characters.startIndex]) // 가
