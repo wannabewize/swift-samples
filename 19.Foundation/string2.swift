@@ -16,7 +16,7 @@ else {
 
 // 옵션을 이용해서 대소문자 구별 없이 찾기
 let range2 = nsStr.rangeOfString("fo", options: NSStringCompareOptions.CaseInsensitiveSearch)
-print(range2)
+print("rangeOfString.CaseInsensitiveSearch : ",range2)
 
 
 let swiftStr = "Hello Swift"
@@ -24,6 +24,7 @@ let range3 : Range<String.Index>? = swiftStr.rangeOfString("sw")
 range3 // nil
 let range4 = swiftStr.rangeOfString("sw", options: NSStringCompareOptions.CaseInsensitiveSearch)
 range4 // 6..<8
+print("Swift String. rangeOfString : ", range4)
 
 
 //

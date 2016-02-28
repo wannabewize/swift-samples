@@ -5,14 +5,17 @@ let yesterday = NSDate(timeIntervalSinceNow: (-60*60*24)) // 어제
 let tomorrow = now.dateByAddingTimeInterval(60 * 60 * 24) // 내일
 
 
-now.compare(yesterday) == NSComparisonResult.OrderedDescending	// OrderedDescending
-now.earlierDate(yesterday)	// yesterday
-now.laterDate(tomorrow)	// tomorrow
+let compare = now.compare(yesterday)	// OrderedDescending
+print("now compare yesterday : ", compare.rawValue)
+let earlier = now.earlierDate(yesterday)	// yesterday
+print("Earlier Date : ", earlier)
+let later = now.laterDate(tomorrow)	// tomorrow
+print("Later Date : ", later)
 
-
-floor(yesterday.timeIntervalSinceDate(tomorrow)) / (24*60*60)
-ceil(tomorrow.timeIntervalSinceNow) / 60 // 1440 minutes
-
+let days = floor(yesterday.timeIntervalSinceDate(tomorrow)) / (24*60*60)
+print("어제와 내일 사이 : ", days)
+let minute = ceil(tomorrow.timeIntervalSinceNow) / 60 // 1440 minutes
+print("내일까지 : ", minute)
 
 
 let formatter = NSDateFormatter()
@@ -24,13 +27,11 @@ let customFormatter = NSDateFormatter()
 customFormatter.dateFormat = "yyyy/MM/dd"
 
 // 날짜 객체에서 문자열 얻기
-let dateStr = customFormatter.stringFromDate(tomorrow)
+let tomorrowStr = customFormatter.stringFromDate(tomorrow)
+print("내일 : ", tomorrowStr)
 
 // 문자열에서 날짜 객체 얻기
 let date = customFormatter.dateFromString("2016/12/25")!
-
-
-
 
 let calendar = NSCalendar.currentCalendar()
 
@@ -62,12 +63,12 @@ if let date = calendar.dateFromComponents(component) {
    let formatter = NSDateFormatter()
    formatter.dateFormat = "yyyy/MM/dd"
    
-   formatter.stringFromDate(date) 	// 2016/07/17
+   let dateStr = formatter.stringFromDate(date) 	// 2016/07/17
+   print("2016년 30번째주 일요일 : ", dateStr)
 }
-
 
 let flag : NSCalendarUnit = [.Month, .Day, .Weekday]
 let component2 = calendar.components(flag, fromDate: now)
 
-component2.month 		// 월
-component2.day        // 일
+print("월 : ", component2.month) 		// 월
+print("일 : ", component2.day)        // 일

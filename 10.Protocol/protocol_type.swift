@@ -27,13 +27,15 @@ obj2.sing()
 //obj2.drink()
 
 
+// 파라미터 타입으로 선언
 func sayHello(who : String, and : Singing) {
+   print("Hello. 파라미터 타입은 Singing 프로토콜")
 }
+sayHello("IU", and : obj2)
 
 protocol Dancing {
    func dance()
 }
-
 
 // 변수 선언
 class Idol : Singing, Dancing {
@@ -46,7 +48,10 @@ class Idol : Singing, Dancing {
    }
 }
 
+// 두 개 이상의 프로토콜
 func entertain(who : protocol<Singing, Dancing>) {
-   
+   print("Singing, Dancing 프로토콜 타입")
 }
 
+var exid = Idol()
+entertain(exid)

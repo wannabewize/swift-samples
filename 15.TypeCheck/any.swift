@@ -7,7 +7,5 @@ class MyClass {
 
 anyVar = MyClass()
 
-
-
 var anyObj1 : AnyObject = MyClass()
 //var anyObj2 : AnyObject = "Hello"

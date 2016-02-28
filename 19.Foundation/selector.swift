@@ -25,8 +25,6 @@ Selector("greeting:with:")
 // 내부 파라미터 이름을 외부 파라미터 이름으로 사용
 Selector("greeting:emotion:")
 
-
-
 class MyClass : NSObject {
    func sayYes() {
       print("YES!")

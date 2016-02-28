@@ -17,6 +17,8 @@ class Rectangle {
 }
 
 let point = Rectangle.Point(x: 10, y: 10)
+print("Rectangle.Point : ", point)
 let size = Rectangle.Size(width: 100, height: 100)
+print("Rectangle.Size : ", size)
 
 let obj = Rectangle(origin: point, size: size)

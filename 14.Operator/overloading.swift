@@ -10,7 +10,7 @@ func +(left : Point, right : Point) -> Point {
 var p1 = Point(x: 10, y: 10)
 var p2 = Point(x: 20, y: 20)
 
-p1 + p2			// (30, 30)
+print("Point + Point : ", p1 + p2)			// (30, 30)
 
 
 
@@ -22,11 +22,14 @@ postfix func ++(inout point : Point) -> Point {
 }
 
 var p3 = Point(x: 10, y: 10)
-p3++			// (11,11)
+print("Point++ : ", p3++)			// (11,11)
 
 
-prefix func -(point : Point) {
-   print("1")
+prefix func -(point : Point) -> Point {
+   var another = point
+   another.x = -point.x
+   another.y = -point.y
+   return another
 }
 
--p1
+print("-Point : ", -p1)

@@ -11,10 +11,8 @@ class MyClass {
 }
 
 var obj = MyClass()
-obj[3] // "3"
-obj["77"] // 2
-
-
+print("커스텀 타입에 첨자 표기[3] : ", obj[3]) // "3"
+print("커스텀 타입에 첨자 표기[\"77\"] : ", obj["77"]) // 2
 
 //
 // 기존 타입(String)의 extension
@@ -35,6 +33,6 @@ extension String {
 }
 
 let str = "Hello Swift"
-str[3] // l
-str[6...9]  // Swift
+print("str[3] : ",str[3]) // l
+print("str[6...9] : ", str[6...9])  // Swift
 

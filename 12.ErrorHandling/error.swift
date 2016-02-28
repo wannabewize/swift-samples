@@ -3,7 +3,6 @@ enum CustomError : ErrorType {
    case YourFault
 }
 
-
 func inputPositive(val : Int) throws {
    guard val > 0 else {
       throw CustomError.YourFault
@@ -12,18 +11,22 @@ func inputPositive(val : Int) throws {
    print("정상 수행")
 }
 
+// throws 함수 실행하기 : 에러 처리는 안됨
 try inputPositive(1)
+// try inputPositive(0)
 
+
+// throws 함수의 에러 처리
 do {
    try inputPositive(0)
 } catch {
-   print("에러 발생")
+   print("에러 발생. 크래쉬 안됨")
 }
 
 do {
    try inputPositive(0)
 } catch let error {
-   print("에러 : \(error)")
+   print("에러 발생. 에러 정보 얻기 : \(error)")
 }
 
 
@@ -31,9 +34,9 @@ do {
 do {
    try inputPositive(0)
 } catch CustomError.MyFault {
-   print("내 탓")
+   print("에러 발생 - 에러 타입 : 내 탓")
 } catch CustomError.YourFault {
-   print("네 탓")
+   print("에러 발생 - 에러 타입 : 네 탓")
 }
 
 
@@ -49,8 +52,7 @@ do {
 }
 
 
-
-
+// 구조체와 클래스를 사용한 에러 정의
 struct CustomErrorStruct : ErrorType {
    var msg : String
 }
@@ -81,7 +83,7 @@ catch let error {
 }
 
 
-
+// Optional try
 func sayHello() throws {
    throw CustomError.MyFault
 }

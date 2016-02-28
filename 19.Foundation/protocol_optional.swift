@@ -10,5 +10,9 @@ class MyClass : NSObject, Baking {
    func baking() {
       print("빵 굽기")
    }
+   
+   // makeDough 구현 안함
+   
+   // duration 구현 안함
 }
 

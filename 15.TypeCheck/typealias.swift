@@ -3,8 +3,6 @@ typealias Century = Int
 var thisEra : Century
 thisEra = 21
 
-
-
 typealias ResultHandler = (Int) -> Void
 
 func add(i : Int, _ j : Int, _ resultHandler : ResultHandler ) {

@@ -41,6 +41,10 @@ func makeUpdownGame(num : Int) -> Int -> String {
    }
 }
 
+print("게임 생성")
 let game = makeUpdownGame(10)
-game(5)
-game(8)
+let ret1 = game(5)
+print("5 시도. 결과 : ", ret1)
+
+let ret2 = game(8)
+print("8 시도. 결과 : ", ret2)

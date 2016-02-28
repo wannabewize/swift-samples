@@ -72,28 +72,6 @@ class MyClass : HoldingBreath {
    }
 }
 
-// Initializer
-protocol Named {
-   // Initializer
-   init(name : String)
-   
-   // Failable Initializer
-   init?()
-}
-
-class Monster : Named {
-   let name : String
-   // required로 작성
-   required init(name: String) {
-      self.name = name
-   }
-   
-   required init() {
-      self.name = "무명"
-   }
-}
-
-
 var singingAnimal : Singing = Human()
 singingAnimal.sing()
 

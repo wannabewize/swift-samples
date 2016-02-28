@@ -30,5 +30,5 @@ let obj1 = Rectangle(width: 10, height: 10)
 let obj2 = Rectangle(width: 10, height: 10)
 let obj3 = Rectangle(width: 10, height: 20)
 
-obj1.isEqual(obj2)
-obj1 == obj3
+print("obj.isEqual : ", obj1.isEqual(obj2))
+print("obj == obj : ", obj1 == obj3)
