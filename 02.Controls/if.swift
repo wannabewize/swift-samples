@@ -45,3 +45,20 @@ if let val1 = someFunc(), let val2 = anotherFunc() {
    print("val1, val2는 모두 유효한 값")
 }
 
+// if - binding. chain
+
+
+class MyClass {
+   func someFunc4() -> Int? {
+      return 0
+   }
+}
+
+func someFunc3() -> MyClass? {
+   return MyClass()
+}
+
+if let val1 = someFunc3(), let val2 = val1.someFunc4() {
+   print("val1 : ", val1, " val2 : ", val2)
+}
+
