@@ -37,22 +37,3 @@ func greeting5( person : String, _ emotion : String) {
 }
 
 greeting5("Swift", "Passion")
-
-
-func greeting6(whom person : String, emotion : String = "Happy") {
-   print("Hello " + person + " with " + emotion)
-}
-
-// 기본값이 설정된 파라미터는 호출 시 생략 가능
-greeting6(whom: "Swift")
-greeting6(whom: "Swift", emotion: "Passion")
-
-
-
-// 외부 파라미터를 생략한, 기본값이 설정된 파라미터
-func greeting7(whom person : String, _ emotion : String = "Happy", _ end : String = "Bye") {
-   print("Hello " + person + " with " + emotion)   
-}
-
-greeting7(whom: "Swift")
-greeting7(whom: "Swift", "Passion")

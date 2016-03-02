@@ -44,8 +44,9 @@ Swift Sample Code
 ## 04.함수(Function)
 - 함수
    * basic.swift : 함수 기본, 반환값
-   * parameter1.swift : 함수 파라미터
+   * parameter1.swift : 함수 파라미터, 파라미터 이름(내부, 외부)
    * parameter2.swift : 가변 길이 파라미터, 파라미터 변수, inout 파라미터
+   * parameter_default.swift : 기본값을 가진 파라미터
    * optioanl.swift : 옵서널 타입
 
 ## 05.클래스(Class), 메소드
