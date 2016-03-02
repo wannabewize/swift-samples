@@ -1,11 +1,8 @@
 class Country {
    var name : String
-   // unowned
-   unowned var capital : City
    
-   init(name : String, capital : City) {
+   init(name : String) {
       self.name = name
-      self.capital = capital
    }
    
    deinit {
@@ -13,11 +10,14 @@ class Country {
    }
 }
 
-class City {
+class Capital {
    var name : String
    
-   init(name : String) {
+   unowned var country : Country
+   
+   init(name : String, country : Country) {
       self.name = name
+      self.country = country
    }
    
    deinit {
@@ -25,10 +25,9 @@ class City {
    }
 }
 
+var korea : Country! = Country(name: "Korea")
+var seoul : Capital! = Capital(name: "Seoul", country: korea)
 
-var seoul : City! = City(name: "Seoul")
-var korea : Country! = Country(name: "Korea", capital: seoul)
-
-seoul = nil
-//print(korea.capital) // 에러. korea.capital은 dangling pointer
 korea = nil
+//print(seoul.country) // Error, Dangling Pointer
+seoul = nil
