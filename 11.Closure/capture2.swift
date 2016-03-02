@@ -1,38 +1,33 @@
-// Capturing
-class MyClass {
-   var value = "클로저 캡춰 테스트"
+import Foundation
+
+func makeUpdownGame(num : Int) -> Int -> () {
+   var trial = 0;
+   // 주어진 범위 내 난수 생성. Foundation 프레임워크 필요
+   print("trial : \(trial)")
+   let goal = Int(arc4random_uniform(UInt32(num)))
+   print("게임 생성됨 - Goal : \(goal)")
    
-   func closureTest() -> () -> () {
-      return {
-         print(self.value)
+   return {
+      if $0 < goal {
+         print("시도 횟수 : \(++trial) 결과 : UP")
       }
-   }
-   
-   func closureTest2() -> () -> () {
-      return {
-         [unowned self]
-         () -> () in
-         print(self.value)
+      else if $0 > goal {
+         print("시도 횟수 : \(++trial) 결과 : Down")
       }
-   }
-   
-   deinit {
-      print("MyClass 객체 해제")
-   }
+      else {
+         print("시도 횟수 : \(trial) Bingo")
+      }
+   } // 파라미터, 리턴 타입 선언 생략
 }
 
-print("== self를 캡춰하는 클로저 예제 시작")
-var obj : MyClass! = MyClass()
-var closure = obj.closureTest()
-closure()
-obj = nil
 
-print("== self를 캡춰하지 않는 클로서 예제")
-var obj2 : MyClass! = MyClass()
-var closure2 = obj2.closureTest2()
-closure2()
-// self 해제
-obj2 = nil
+// trial, goal을 각 클로저마다 복사
 
-// Error.
-//closure2()
+let game = makeUpdownGame(10)
+game(5)
+game(8)
+
+
+let game2 = makeUpdownGame(20)
+game2(10)
+game2(8)
