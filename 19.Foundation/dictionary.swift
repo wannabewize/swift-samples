@@ -26,4 +26,12 @@ mDic.setObject(2, forKey: "Key2")
 // 덮어쓰기
 mDic.setObject([1,2,3], forKey: "Key2")
 
+//  첨자로 삭제
+mDic["Key1"] = nil
 
+// 첨자로 변경
+mDic["Key2"] = "Value2"
+
+// 첨자로 추가
+mDic["Key3"] = "Three"
+mDic

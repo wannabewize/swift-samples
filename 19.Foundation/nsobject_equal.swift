@@ -11,7 +11,7 @@ class Rectangle : NSObject {
    
    // isEqual 메소드 재정의
    override func isEqual(object: AnyObject?) -> Bool {
-      // 옵셔널 타입의 파라미터, AnyObject 타입 비교
+      // 옵셔널 타입의 파라미터, AnyObject 타입 비교      
       if let other = object as? Rectangle {
          // 내용(가로와 세로 길이) 비교
          return self.width == other.width && self.height == other.height
@@ -32,3 +32,7 @@ let obj3 = Rectangle(width: 10, height: 20)
 
 print("obj.isEqual : ", obj1.isEqual(obj2))
 print("obj == obj : ", obj1 == obj3)
+
+
+let obj = obj1
+print("obj === obj1 : ", obj === obj1)
