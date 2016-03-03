@@ -117,7 +117,8 @@ Swift Sample Code
    * array_sort.swift : 배열의 API에서 클로저 사용
    * closuere.swift : 클로저 사용 함수 작성하기
    * capture1.swift : 클로저와 클로저 Context
-   * capture2.swift : 클로저에서 소유하지 않기
+   * capture2.swift : 클로저와 클로저 Context2
+   * capture3.swift : 클로저에서 소유하지 않기(unowned, weak)
    
 ## 12.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기
