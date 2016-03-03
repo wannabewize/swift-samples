@@ -1,10 +1,8 @@
 protocol MyProtocol {
 }
 
-
-class MyClass : MyProtocol {
+struct MyStruct : MyProtocol {
 }
-
 
 extension MyProtocol {
    func sayGoodbye() {
@@ -12,9 +10,7 @@ extension MyProtocol {
    }
 }
 
-
-
-var obj = MyClass()
+var obj = MyStruct()
 obj.sayGoodbye()
 
 
@@ -23,7 +19,6 @@ class YourClass : MyProtocol {
       print("Bye Bye")
    }
 }
-
 
 var obj2 = YourClass()
 obj2.sayGoodbye()
