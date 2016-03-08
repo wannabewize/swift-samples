@@ -1,5 +1,3 @@
-import Foundation
-
 func incrementBy(amount : Int) -> () -> () {
    // 클로저에서 count 캡춰
    var count = 0
