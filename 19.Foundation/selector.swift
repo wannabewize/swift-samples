@@ -1,14 +1,25 @@
 import Foundation
 
-func greeting() {
+
+class MyClass : NSObject {
+   func greeting() {
+      print("Hello")
+   }
+     
+   func justDoIt() {
+      // Instance 생략하기. 혹은 self 사용
+      let innerSel = #selector(greeting)
+      print(innerSel)
+   }    
 }
 
-let action1 = Selector("greeting")
-// 타입이 Selector면 구조체 코드 생략 가능
-let action2 : Selector = "greeting"
+let obj = MyClass()
+let sel = #selector(obj.greeting)
+print(sel)
 
+obj.justDoIt()
 
-
+/*
 func greeting(person : String) {
 }
 
@@ -59,3 +70,5 @@ var obj2 = MyClass2()
 obj2.respondsToSelector("init:") // false
 obj2.respondsToSelector("initWithWho:")
 obj2.respondsToSelector("initWithWho:emotion:")
+
+*/
