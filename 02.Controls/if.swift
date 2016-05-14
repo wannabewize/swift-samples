@@ -1,16 +1,23 @@
+//
+// Basic
+//
 if 3 > 2  {
    print("3이 2보다 크다!")
 }
 
 
+//
+// nil 비교
+//
 var obj : String!
 
 if obj != nil  {
    print("obj에 유요한 값")
 }
 
-
-
+//
+// if - else if - else
+//
 var bloodType = "C"
 if bloodType == "A" {
   print("혈액형은 A")
@@ -20,45 +27,5 @@ else if bloodType == "B" || bloodType == "O" {
 }
 else {
   print("그러면 AB형")
-}
-
-
-
-// if - binding
-func someFunc() -> Int! {
-   return 1
-}
-
-if let val = someFunc() {
-   print("\(val)")
-}
-else {
-   print("결과는 nil")
-}
-
-
-func anotherFunc() -> Int! {
-   return 1
-}
-
-if let val1 = someFunc(), let val2 = anotherFunc() {
-   print("val1, val2는 모두 유효한 값")
-}
-
-// if - binding. chain
-
-
-class MyClass {
-   func someFunc4() -> Int? {
-      return 0
-   }
-}
-
-func someFunc3() -> MyClass? {
-   return MyClass()
-}
-
-if let val1 = someFunc3(), let val2 = val1.someFunc4() {
-   print("val1 : ", val1, " val2 : ", val2)
 }
 
