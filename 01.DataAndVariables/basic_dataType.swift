@@ -1,6 +1,8 @@
 // Bool
 var boolVal = true
-// Type Error
+
+// 에러 = Bool 타입에 정수값 대입
+// error: cannot convert value of type 'Int' to specified type 'Bool'
 // var boolVar2 : Bool = 1
 
 // 정수형 타입
@@ -15,6 +17,7 @@ var int32Val : Int32 = 6
 var int64Val : Int64 = 7
 
 // Overflow Error : Int8의 크기는 -128~127
+// error: integer literal '128' overflows when stored into 'Int8'
 // int8Val = 128 
 
 // 타입 변환
@@ -22,8 +25,12 @@ intVal = Int(int8Val)
 
 
 // 서로 다른 타입의 값 대입 불가
-// intType = int16Type
-// int32Type = int8Type // 더 큰 타입으로 대입하는 것도 불가
+// error: cannot assign value of type 'Int16' to type 'Int'
+// intVal = int16Val
+
+// 더 큰 타입으로 대입하는 것도 불가
+// error: cannot assign value of type 'Int8' to type 'Int32'
+// int32Val = int8Val
 
 // 타입 크기 
 print("Int size   : ", sizeof(Int), " min : ", Int.min, " max : ", Int.max)
@@ -53,5 +60,7 @@ var floatVal2 = 3e10 // 지수형 표기. 300.0
 floatVal = Float(doubleVal)
 
 print("double + Double(float) : ",doubleVal + Double(floatVal));
+
 // 에러 : 서로 다른 타입 간 연산
+// error: binary operator '+' cannot be applied to operands of type 'Float' and 'Double'
 // var ret = floatVal + doubleVal

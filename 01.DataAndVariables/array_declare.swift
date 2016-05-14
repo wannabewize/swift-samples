@@ -14,4 +14,6 @@ print("isEmpty : ",emptyArray.isEmpty)
 
 let element1 = intArray[0] // 1
 let element2 = floatArray[1] // 2.2
-//let element3 = strArray[3] // Error
+
+// fatal error: Index out of range
+// let element3 = strArray[3] 

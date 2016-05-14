@@ -10,5 +10,5 @@ print(constant2)
 // 에러
 //
 
-// 상수의 값 변경 시도
+// error: cannot assign to value: 'constant1' is a 'let' constant
 // constant1 = 678
