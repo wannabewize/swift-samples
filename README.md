@@ -10,6 +10,7 @@ Swift Sample Code
 - 문자열
    * string_basic.swift
    * string_operation.swift
+   * string_convert.swift
    * string_compare.swift
    * string_modify.swift
    * string_view.swift
@@ -18,7 +19,7 @@ Swift Sample Code
 - 배열
    * array_declare.swift
    * array_edit.swift
-   * array_valueType.swfit
+   * array_valueType.swift
 - 딕셔너리
    * dictionary.swift
    * dictionary_valueType.swift
