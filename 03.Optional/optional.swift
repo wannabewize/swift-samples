@@ -1,8 +1,10 @@
 // Error
 //var i : Int = nil
 // Optional Type
-var optionalVar : Int? = nil
 
+var optionalVar : Optional<Int> = nil
+var optionalVar2 : Int? = nil
+print("nil 대입된 변수 : ",optionalVar, optionalVar2)
 
 // nil 원소를 다룰 수 있는 배열
 let array : [String?] = ["A", nil, "C"]
