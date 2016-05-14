@@ -33,12 +33,13 @@ Swift Sample Code
    * while.swift
 - 조건문
    * if.swift
-   * switch-case.swift
+   * switch-case
    * guard.swift
    
 ## 03.옵셔널(Optional)
 - 옵셔널
    * optional.swift : 옵셔널 타입, 옵셔널 바인딩, ?? 연산자
+   * optional_binding.swift, optional_binding_guard.swift : if와 guard를 사용하는 옵셔널 바인딩
    * optional_chain.swift
    * implicit_optional.swift : 암시적 언래핑 옵셔널
 
