@@ -118,9 +118,9 @@ Swift Sample Code
    * function_type.swift : 함수 타입
    * array_sort.swift : 배열의 API에서 클로저 사용
    * closuere.swift : 클로저 사용 함수 작성하기
-   * capture1.swift : 클로저와 클로저 Context
-   * capture2.swift : 클로저와 클로저 Context2
-   * capture3.swift : 클로저에서 소유하지 않기(unowned, weak)
+   * closure_inClass.swift : 클래스 내 메소드와 프로퍼티로 사용하기
+   * capture.swift : 클로저와 캡춰
+   * capture_unowned.swift : 클로저에서 소유하지 않기(unowned)
    
 ## 12.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기
