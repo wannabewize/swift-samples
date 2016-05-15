@@ -121,6 +121,8 @@ Swift Sample Code
    * closure_inClass.swift : 클래스 내 메소드와 프로퍼티로 사용하기
    * capture.swift : 클로저와 캡춰
    * capture_unowned.swift : 클로저에서 소유하지 않기(unowned)
+   * noescape.swift : noescape 클로저
+   * autoclosure.swift : autoclosure
    
 ## 12.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기
