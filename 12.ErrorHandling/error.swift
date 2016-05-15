@@ -51,6 +51,14 @@ do {
    }
 }
 
+func dangerousFunction() throws {
+   throw CustomError.YourFault
+}
+
+
+/**
+* 구조체를 사용한 에러
+*/
 
 // 구조체와 클래스를 사용한 에러 정의
 struct CustomErrorStruct : ErrorType {
@@ -61,7 +69,7 @@ class CustomErrorClass : ErrorType {
    
 }
 
-func dangerousFunction() throws {
+func dangerousFunction2() throws {
    defer {
       print("동작 마무리")
    }
@@ -69,7 +77,7 @@ func dangerousFunction() throws {
 }
 
 do {
-   try dangerousFunction()
+   try dangerousFunction2()
 }
 catch let error where error is CustomErrorStruct {
    let errorInfo = error as! CustomErrorStruct
@@ -83,12 +91,79 @@ catch let error {
 }
 
 
-// Optional try
-func sayHello() throws {
-   throw CustomError.MyFault
+
+func dangerousArgument( argFunc : () throws -> () ) {
+   do {
+      try argFunc()
+   }
+   catch let error {
+      print("Error : ", error)
+   }
+}
+dangerousArgument(dangerousFunction)
+
+
+func dangerousReturnFunc() -> () throws -> ()  {
+   return dangerousFunction
 }
 
-let ret = try? sayHello()
-ret
+
+func doIt() {
+   do {
+      try dangerousFunction()
+   }
+   catch let error {
+      print("Error : ", error)
+   }
+}
+doIt()
 
 
+// 에러 전파하기
+func doIt2() throws {
+   try dangerousFunction()
+}
+
+do {
+   try doIt2()
+}
+catch let error {
+   print("Error : ", error)
+}
+
+// rethrows
+func doIt3( argFunc : () throws -> () ) rethrows {
+   try argFunc()
+}
+
+do {
+   try doIt3(dangerousFunction)
+}
+catch let error {
+   print("Error : ", error)
+}
+
+//func doIt4( argFunc : () throws -> () ) rethrows {
+//   try argFunc()
+//   throw CustomError.MyFault
+//}
+
+// Optional try
+
+
+
+func addPositiveNumber(i : Int, _ j : Int) throws -> Int {
+   guard i > 0 && j > 0 else {
+      throw CustomError.YourFault
+   }
+   return i + j
+}
+
+let ret1 = try? addPositiveNumber(1, 2)
+print(ret1) // Optional Type
+
+let ret2 = try? addPositiveNumber(-1, 2)
+print(ret2) // nil
+
+let ret3 = try! addPositiveNumber(3, 4)
+print(ret3)
