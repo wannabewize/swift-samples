@@ -1,3 +1,8 @@
+/*
+ * Set 타입 예제
+ * swift2
+ */
+
 var beverage : Set<String> = ["Coke", "Juice", "Milk"]
 var intSet : Set<Int> = [1, 2, 3, 4, 5]
 

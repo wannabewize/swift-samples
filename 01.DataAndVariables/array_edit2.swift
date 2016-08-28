@@ -1,3 +1,8 @@
+/*
+ * Array 예제
+ * swift2
+ */
+
 var intArray : [Int] = [1, 2, 3]
 // 원소를 배열 끝에 추가
 intArray.append(5) // [1, 2, 3, 5]

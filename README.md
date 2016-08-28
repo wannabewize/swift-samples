@@ -15,23 +15,21 @@ Swift Sample Code
    * string_convert.swift : 문자열과 다른 타입 간 변환
    * string_operation : 문자열 다루기
    * string_format : 문자열 포맷
-   * string_characters : 문자열과 문자
-   * string_substring : 문자열과 부분 문자열
-   * string_compare.swift
-   * string_modify.swift
+   * string_characters : 문자열과 문자. 문자열 인덱스
+   * string_substring : 부분 문자열
+   * string_compare.swift : 문자열 비교
+   * string_modify.swift : 문자열 수정(삭제, 삽입, 교체)
    * string_view.swift
-- 튜플
-   * tuple.swift
-- 배열
-   * array_declare.swift
-   * array_edit.swift
-   * array_valueType.swift
-- 딕셔너리
-   * dictionary.swift
-   * dictionary_valueType.swift
-- 셋
-   * set.swift
-   * set_operation.swift
+- 다수의 데이터 다루기
+   * tuple.swift : 튜플
+   * array_declare.swift : 배열 선언
+   * array_edit : 배열 수정
+   * array_valueType.swift : 배열 밸류 타입
+   * dictionary.swift : 딕셔너리
+   * dictionary_valueType.swift : 밸류 타입으로 동작하는 딕셔너리
+   * collection_complext : 콜렉션 복합 구조(2차원 배열, 배열과 딕셔너리)
+   * set.swift : 셋
+   * set_operation.swift : 셋
 
 ## 02.제어문(Controls)
 - 반목문
