@@ -3,14 +3,20 @@ Swift Sample Code
 
 ## 01.변수와 상수, 데이터타입(DataAndVairables)
 - 변수와 상수
-   * variable_declare.swift
+   * variable.swift
    * constant.swift
 - 데이터 타입
    * basic_dataType.swift
+   * typeInfo : 타입 정보 얻기
+- 문자 
+   * character.swift
 - 문자열
-   * string_basic.swift
-   * string_operation.swift
-   * string_convert.swift
+   * string_basic.swift : 문자열 생성
+   * string_convert.swift : 문자열과 다른 타입 간 변환
+   * string_operation : 문자열 다루기
+   * string_format : 문자열 포맷
+   * string_characters : 문자열과 문자
+   * string_substring : 문자열과 부분 문자열
    * string_compare.swift
    * string_modify.swift
    * string_view.swift

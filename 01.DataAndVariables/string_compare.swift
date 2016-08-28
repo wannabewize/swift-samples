@@ -1,3 +1,8 @@
+/*
+ * 문자열 비교
+ * swift2, swift3
+ */
+
 let str = "Hello Swift"
 if str == "Hello Swift" {
    print("같은 문자열")

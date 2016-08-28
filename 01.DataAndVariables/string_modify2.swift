@@ -1,3 +1,8 @@
+/*
+ * 문자열 수정(추가, 삭제, 변경)
+ * for Swift2
+ */
+
 var str = "Hello"
 // String 추가. collections
 str.insertContentsOf("Swift".characters, at: str.endIndex) // "HelloSwift"
@@ -6,7 +11,6 @@ print(str)
 // Character 추가
 str.insert("!", atIndex: str.endIndex) // "HelloSwift!"
 print(str)
-
 
 let index : String.Index = str.startIndex.advancedBy(5)
 print("String.Index : ", index)

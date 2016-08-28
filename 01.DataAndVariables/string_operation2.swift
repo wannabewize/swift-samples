@@ -1,10 +1,15 @@
+/*
+ * 문자열 다루기 - Swift2
+ */
+
+// + 연산자로 문자열 덧붙이기
 var str = "Hello"
 str = str + " Swift"
+str += "!"
 print(str)
 
-
-var str2 = "Hello"
 // String 덧붙이기
+var str2 = "Hello"
 str2.appendContentsOf(" Swift")
 
 // Character 덧붙이기
