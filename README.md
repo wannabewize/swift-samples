@@ -1,35 +1,30 @@
-# Swift-Samples
-Swift Sample Code
+# Swift3 Samples
+Swift3 Samples
 
-## 01.변수와 상수, 데이터타입(DataAndVairables)
-- 변수와 상수
-   * variable.swift
-   * constant.swift
-- 데이터 타입
-   * basic_dataType.swift
+현재 Swift2 -> Swift3 예제 작성 중
+
+## 01.변수와 상수, 데이터타입(Data)
+- 변수와 상수, 타입
+   * variable : 변수
+   * constant : 상수
    * typeInfo : 타입 정보 얻기
-- 문자 
-   * character.swift
-- 문자열
-   * string_basic.swift : 문자열 생성
-   * string_convert.swift : 문자열과 다른 타입 간 변환
-   * string_operation : 문자열 다루기
-   * string_format : 문자열 포맷
-   * string_characters : 문자열과 문자. 문자열 인덱스
-   * string_substring : 부분 문자열
-   * string_compare.swift : 문자열 비교
-   * string_modify.swift : 문자열 수정(삭제, 삽입, 교체)
-   * string_view.swift
+- 기본 타입
+   * type_Bool : 부울 타입
+   * type_Int : 정수형 타입
+   * type_Float : 실수형 타입
+   * type_Character : Character 타입
+   * type_String : 문자열 타입
+   * type_String_compare : 문자열 비교
+   * type_String_modify : 문자열 수정
+   * type_String_operation : 문자열 다루기
+   * type_String_views : 문자열과 뷰
 - 다수의 데이터 다루기
-   * tuple.swift : 튜플
-   * array_declare.swift : 배열 선언
-   * array_edit : 배열 수정
-   * array_valueType.swift : 배열 밸류 타입
-   * dictionary.swift : 딕셔너리
-   * dictionary_valueType.swift : 밸류 타입으로 동작하는 딕셔너리
-   * collection_complext : 콜렉션 복합 구조(2차원 배열, 배열과 딕셔너리)
-   * set.swift : 셋
-   * set_operation.swift : 셋
+   * type_Tuple : 튜플
+   * type_Array : 배열
+   * type_Dictionary : 딕셔너리 타입
+   * type_Set : 셋 타입
+- 밸류 타입
+   * valuetype : 밸류 타입   
 
 ## 02.제어문(Controls)
 - 반목문
