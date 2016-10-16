@@ -1,42 +1,51 @@
+/*
+ * Optional, nil 예제
+ */
+
 // Error
-//var i : Int = nil
+// var i : Int = nil
 // Optional Type
 
 var optionalVar : Optional<Int> = nil
 var optionalVar2 : Int? = nil
 print("nil 대입된 변수 : ",optionalVar, optionalVar2)
 
-// nil 원소를 다룰 수 있는 배열
-let array : [String?] = ["A", nil, "C"]
-let element = array[0] // element는 옵셔널 타입
-print(element)
+
+// 타입 변환시 발생하는 nil
+let intFromStr = Int("a") // Int? 타입
+print("int from string : ", intFromStr)
+
+// 딕셔너리 원소 접근
+let numbers = ["one":1, "two":2]
+let three = numbers["three"] // Int?
+print("three from dictionary : ", three)
 
 
 var optionalStr : String? = "ABC"
 
-// OptionalType 직접 사용은 불가!
-//optionalStr.lowercaseString
+// OptionalType 직접 사용은 불가! - 컴파일 에러
+//optionalStr.lowercased()
 
-// if를 이용한 옵셔널 바인딩
-if let str = optionalStr {
-   print(str.lowercaseString)
-}
+//
+// 옵셔널 체인
+// 
 
-// guard를 이용한 옵셔널 바인딩
-func myFunc(arg : String?) {
-   guard let str = arg else {
-      print("파라미터가 nil")
-      return;
-   }
-   
-   // str은 옵셔널 타입이 아니다. unwrapped
-   print(str.lowercaseString)
-}
+let str = optionalStr?.lowercased() // str은 옵셔널 타입. Optional("abc")
+print(str)
 
-myFunc(nil)
+
+optionalStr = nil
+let str2 = optionalStr?.lowercased() // nil
+print(str2)
+
+
+let array : [String]? = ["A", "B", "C"]
+let str3 = array?[1].lowercased()
+print(str3)
 
 
 // ?? 연산자
 var userSelectedColor : String?
 var colorName = userSelectedColor ?? "Red"  // nil 이면 Red를 사용
 print(colorName) // "Red"
+
