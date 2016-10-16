@@ -1,12 +1,7 @@
 // For Loop
 let limit = 3
 
-// warning: C-style for statement is deprecated and will be removed in a future version of Swift
-for var i = 0 ; i < limit ; i++ {
-   print(i);   
-}
-
-// C 스타일 대신 사용
+// 범위를 사용하는 For Loop. C 스타일 for 문은 삭제
 for i in 0..<limit {
    print(i)
 }
@@ -23,7 +18,7 @@ var array2 = [10, 20, 30]
 for item in array2 {
    print(item)
    
-   // 배열 순회 중 변경 시도. 과연? 
+   // 배열 순회 중 변경 시도.
    if item < 30 {
       array2.append(item*2)
    }
