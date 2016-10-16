@@ -1,6 +1,5 @@
 /*
  * Set 타입 예제
- * swift2
  */
 
 var primeNumbers : Set<Int> = [1, 2, 3, 5, 7, 11, 13]

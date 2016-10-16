@@ -1,6 +1,5 @@
 /*
  * 타입 정보 얻기 .dynamicType
- * Swift2
  */
 
 let str = "Hello World"

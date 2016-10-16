@@ -1,6 +1,5 @@
 /*
  * Set 타입 예제
- * swift2
  */
 
 var beverage : Set<String> = ["Coke", "Juice", "Milk"]

@@ -1,6 +1,5 @@
 /*
  * 문자열 수정(추가, 삭제, 변경)
- * for Swift2
  */
 
 var str = "Hello"

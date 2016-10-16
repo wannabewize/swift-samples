@@ -1,6 +1,5 @@
 /*
  * 문자열과 문자. 인덱스
- * for Swift2
  */
 
 let str = "Hello Swift"

@@ -1,6 +1,5 @@
 /*
  * Array 예제
- * swift2
  */
 
 var intArray : [Int] = [1, 2, 3]
