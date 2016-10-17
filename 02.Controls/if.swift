@@ -29,3 +29,12 @@ else {
   print("그러면 AB형")
 }
 
+//
+// 버전, 플랫폼 체크
+
+if #available(macOS 10, iOS 10, *) {
+   print("macOS 10, iOS 10")
+}
+else {
+   print("macOS 9")
+}
