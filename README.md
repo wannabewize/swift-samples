@@ -28,19 +28,20 @@ Swift3 Samples
 
 ## 02.제어문(Controls)
 - 반목문
-   * for.swift
-   * while.swift
+   * for : for 반복문
+   * while : while, repeat-while 반복문
 - 조건문
-   * if.swift
-   * switch-case
-   * guard.swift
+   * if : if 조건문
+   * switch-case : switch-case
+   * guard : guard
+   * label : label을 이용한 흐름 제어문
+   * version-check : #avilable을 이용한 플랫폼, 버전 체크
    
 ## 03.옵셔널(Optional)
-- 옵셔널
-   * optional.swift : 옵셔널 타입, 옵셔널 바인딩, ?? 연산자
-   * optional_binding.swift, optional_binding_guard.swift : if와 guard를 사용하는 옵셔널 바인딩
-   * optional_chain.swift
-   * implicit_optional.swift : 암시적 언래핑 옵셔널
+
+   * optional : 옵셔널 타입, 옵셔널 체임, ?? 연산자
+   * optional_binding : if와 guard를 이용한 옵셔널 바인딩
+   * forcedUnwrapping : 강제 언래핑, 암시적 언래핑 옵셔널 타입(IUO)
 
 ## 04.함수(Function)
 - 함수

@@ -1,12 +1,26 @@
+func sayHello(who : String) {
+   print("Hello \(who)")
+}
+
+// Error
+//sayHello(who: nil)
+
+
+// nil이 반환될 수도 있는 함수
 func nilReturnFunction() -> Int? {
    return nil
 }
 
 let ret = nilReturnFunction()
 
+// 함수 실행 결과를 이용한 옵셔널 바인딩
+if let ret = nilReturnFunction() {
+   print("실행 결과 : \(ret)")
+}
 
-func appendIntToString(str : String, _ val : Int?) -> String {
-   // guard를 이용한 early exit, 옵셔널 바인딩
+
+func append(str : String, int val : Int?) -> String {
+   // guard를 이용한 파라미터 nil 검사.
    guard let num = val else {
       return str
    }
@@ -14,25 +28,23 @@ func appendIntToString(str : String, _ val : Int?) -> String {
    return str + String(num)
 }
 
-print(appendIntToString("Hello", 1))
-print(appendIntToString("Hello", nil))
+let ret1 = append(str: "Hello", int: 1)
+print(ret1)
 
-let optionalVal : Int? = 2
-appendIntToString("Swift", optionalVal)
-
-let implicitVal : Int! = 3
-appendIntToString("iOS", implicitVal)
-// 옵셔널 타입이 아닌 파라미터에 nil을 입력하면 에러 발생
-//appendIntToString(nil, 3)
+// nil을 파라미터로 입력
+let ret2 = append(str: "Welcome", int: nil)
+print(ret2)
 
 
-func addStringLength(val : Int, _ arg : String!) -> Int {
-   guard let str = arg else {
-      return val
-   }
-   
-   return val + str.characters.count
+let iuoVal : Int! = 3
+let ret3 = append(str: "Bye", int: iuoVal)
+print(ret3)
+
+
+
+func areYouReady() -> Bool! {
+   return nil
 }
 
-print(addStringLength(0, "Hello"))
-print(addStringLength(1, nil))
+let ready : Bool! = areYouReady()
+print("ready? \(ready)")

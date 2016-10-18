@@ -8,6 +8,11 @@ func greeting() {
 // 함수 실행
 greeting()
 
+// Void, () 반환타입. 생략 가능
+func greeting2() -> Void {
+   print("Hello Swift!")
+}
+greeting2()
 
 
 // Bool 반환
@@ -24,6 +29,7 @@ let drink = favoriteDrink() // "Coffee"
 
 
 func random3() -> (Int, Int, Int) {
+   // 난수값 생성 함수 : arc4random. Foundation 프레임워크
    let r1 = Int(arc4random() % 10)
    let r2 = Int(arc4random() % 10)
    let r3 = Int(arc4random() % 10)
