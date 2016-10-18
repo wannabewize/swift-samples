@@ -1,3 +1,7 @@
+/*
+ * 프로토콜 - 타입으로 사용
+ */
+
 protocol Singing {
    func sing()
 }
@@ -31,7 +35,7 @@ obj2.sing()
 func sayHello(who : String, and : Singing) {
    print("Hello. 파라미터 타입은 Singing 프로토콜")
 }
-sayHello("IU", and : obj2)
+sayHello(who: "IU", and : obj2)
 
 protocol Dancing {
    func dance()
@@ -48,10 +52,10 @@ class Idol : Singing, Dancing {
    }
 }
 
-// 두 개 이상의 프로토콜
-func entertain(who : protocol<Singing, Dancing>) {
+// 두 개 이상의 프로토콜 ( protocol composition )
+func entertain(who : Singing & Dancing) {
    print("Singing, Dancing 프로토콜 타입")
 }
 
 var exid = Idol()
-entertain(exid)
+entertain(who : exid)

@@ -1,3 +1,7 @@
+/*
+ * 프로토콜 내 Initializer
+ */
+
 // Initializer
 protocol Named {
    // Initializer
@@ -14,6 +18,7 @@ class Monster : Named {
       self.name = name
    }
    
+   // Failable Initializer는 non-Failable Initializer로 구현 가능
    required init() {
       self.name = "무명"
    }

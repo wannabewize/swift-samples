@@ -111,10 +111,13 @@ Swift3 Samples
    
 ## 10.프로토콜(Protocol)
 - 프로토콜
-   * protocol.swift
-   * initializer.swift
-   * protocol_type.swift : 프로토콜을 타입으로 사용
-   * class_only.swift : 클래스 전용 프로토콜
+   * basic : 프로토콜 선언, 클래스와 구조체 채택
+   * type_method : 프로토콜 내 타입 메소드 선언
+   * static_method : 프로토콜 내 타입 메소드
+   * property : 프로토콜 내 프로퍼티 선언
+   * initializer : 프로토콜 내 Initializer 선언
+   * protocol_type : 프로토콜을 타입으로 사용
+   * class_only : 클래스 전용 프로토콜
 
 ## 11.클로저(Closure)
 - 클로저
