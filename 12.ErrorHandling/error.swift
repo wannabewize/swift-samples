@@ -1,9 +1,9 @@
-enum CustomError : ErrorType {
+enum CustomError : Error {
    case MyFault
    case YourFault
 }
 
-func inputPositive(val : Int) throws {
+func inputPositive(_ val : Int) throws {
    guard val > 0 else {
       throw CustomError.YourFault
    }
@@ -28,8 +28,6 @@ do {
 } catch let error {
    print("에러 발생. 에러 정보 얻기 : \(error)")
 }
-
-
 
 do {
    try inputPositive(0)
@@ -57,15 +55,15 @@ func dangerousFunction() throws {
 
 
 /**
-* 구조체를 사용한 에러
-*/
+ * 구조체를 사용한 에러
+ */
 
 // 구조체와 클래스를 사용한 에러 정의
-struct CustomErrorStruct : ErrorType {
+struct CustomErrorStruct : Error {
    var msg : String
 }
 
-class CustomErrorClass : ErrorType {
+class CustomErrorClass : Error {
    
 }
 
@@ -92,7 +90,7 @@ catch let error {
 
 
 
-func dangerousArgument( argFunc : () throws -> () ) {
+func dangerousArgument(_ argFunc : () throws -> () ) {
    do {
       try argFunc()
    }
@@ -132,7 +130,7 @@ catch let error {
 }
 
 // rethrows
-func doIt3( argFunc : () throws -> () ) rethrows {
+func doIt3(_ argFunc : () throws -> () ) rethrows {
    try argFunc()
 }
 
@@ -143,27 +141,11 @@ catch let error {
    print("Error : ", error)
 }
 
-//func doIt4( argFunc : () throws -> () ) rethrows {
-//   try argFunc()
-//   throw CustomError.MyFault
-//}
 
-// Optional try
-
-
-
-func addPositiveNumber(i : Int, _ j : Int) throws -> Int {
-   guard i > 0 && j > 0 else {
-      throw CustomError.YourFault
-   }
-   return i + j
+// rethrows는 함수 내부에서의 에러만 전파 가능
+func doIt4(_ argFunc : () throws -> () ) rethrows {
+   try argFunc()
+//   throw CustomError.MyFault // Error -
 }
 
-let ret1 = try? addPositiveNumber(1, 2)
-print(ret1) // Optional Type
 
-let ret2 = try? addPositiveNumber(-1, 2)
-print(ret2) // nil
-
-let ret3 = try! addPositiveNumber(3, 4)
-print(ret3)

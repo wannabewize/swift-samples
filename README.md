@@ -133,7 +133,8 @@ Swift3 Samples
    
 ## 12.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기
-   * error.swift 
+   * error : 에러 정의, 에러 다루기
+   * try_optional : try와 옵셔널을 사용한 에러 다루기
    
 ## 13.Extension
 - 확장
