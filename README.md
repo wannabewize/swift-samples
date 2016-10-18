@@ -83,19 +83,19 @@ Swift3 Samples
 
 ## 08.클래스 상속(Inheritance)
 - 상속, 재정의
-   * override.swift
+   * override : 상속과 재정의
    * super_self.swift
 - 상속과 Initializer
-   * initializer_inherite1.swift
-   * initializer_inherite2.swift
-   * initializer_required.swift
+   * initializer_inherite1 : Initializer 상속
+   * initializer_inherite2 : Initializer 상속
+   * initializer_required : required Initializer
+ 
 - 자식 클래스의 Initializer
-   * initializer_in_childclass1.swift : 자식 클래스의 Designated Initializer
-   * initializer_in_childclass2.swift : 자식 클래스의 Convenience Initializer  
-   * initializer_override1.swift : Initializer 재정의
-   * initializer_override2.swift : Failable initializer 재정의
-- 2단계 초기화
-   * two_phase_initialization.swift
+   * initializer_in_child1 : 자식 클래스의 Designated Initializer
+   * initializer_in_child2 : 자식 클래스의 Convenience Initializer  
+   * initializer_override1 : Initializer 재정의
+   * initializer_override2 : Failable initializer 재정의
+   * two_phase_initialization : 2단계 초기화      
    
 ## 09.구조체와 Enum
 - 구조체

@@ -1,3 +1,7 @@
+/*
+ * Two Phase Initialization
+ */
+
 class Parent {
    var a : Int
    

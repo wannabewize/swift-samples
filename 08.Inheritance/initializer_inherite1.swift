@@ -1,6 +1,7 @@
-//
-// 부모 클래스의 Initialiezer 상속하기. Case 1
-//
+/*
+ * 부모 클래스의 Initialiezer 상속하기. Case 1
+ * 자식 클래스에 Designated Initialiezer가 없으면 상속
+ */
 
 // 부모 클래스
 class Parent {

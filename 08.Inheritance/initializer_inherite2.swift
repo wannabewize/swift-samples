@@ -1,3 +1,8 @@
+/*
+ * Initializer 상속 두번째.
+ * 모든 Designated Initializer를 재정의하면 Convenience Initializer 상속한다.
+ */
+
 class Parent {
    var a : Int
    

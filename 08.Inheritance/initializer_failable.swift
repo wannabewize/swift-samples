@@ -1,3 +1,6 @@
+/*
+ * Failable Initializer의 재정의
+ */
 class Parent {
    var value : Int
    
@@ -32,8 +35,7 @@ class Child : Parent {
    }
 }
 
-var obj = Child(value: 0)
-obj // Optional
+let obj = Child(value: 0) // Optional
 print(obj)
 
 //
@@ -46,8 +48,7 @@ class Child2 : Parent {
    }
 }
 
-var obj2 = Child2(value: 0)
-obj2 // non-optional
+let obj2 = Child2(value: 0)
 print(obj2)
 
 
@@ -56,9 +57,9 @@ print(obj2)
 //
 
 class Child3 : Parent {
-//   override init?() {
-//      super.init(value: 10)
-//   }
+   //   override init?() {
+   //      super.init(value: 10)
+   //   }
 }
 
 

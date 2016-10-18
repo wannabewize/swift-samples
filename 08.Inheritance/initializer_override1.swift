@@ -1,3 +1,6 @@
+/*
+ * 자식 클래스에서 Initializer 재정의
+ */
 class Parent {
    var a : Int
    

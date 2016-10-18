@@ -1,3 +1,7 @@
+/*
+ * Shape 클래스를 상속하는 삼각형 클래스 Triangle
+ */
+
 import Foundation
 
 class Shape {

@@ -1,6 +1,7 @@
-//: Playground - noun: a place where people can play
-
-import Cocoa
+/*
+ * 다각형을 다루기 위한 부모 클래스 Shape에 Failable Intializer와 non-Failable Initializer
+ * 자식 클래스인 Rectangle에 초기화 메소드를 작성한 예제
+ */
 
 class Shape {
    var edge : Int
