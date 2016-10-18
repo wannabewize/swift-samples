@@ -135,6 +135,8 @@ Swift3 Samples
 - 에러 정의, 에러 다루기
    * error : 에러 정의, 에러 다루기
    * try_optional : try와 옵셔널을 사용한 에러 다루기
+   * error_Propagation : 에러 전파
+   * defer : defer를 이용한 예외 상황 마무리 동작
    
 ## 13.Extension
 - 확장

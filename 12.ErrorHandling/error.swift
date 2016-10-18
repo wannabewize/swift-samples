@@ -89,7 +89,7 @@ catch let error {
 }
 
 
-
+// 예외가 발생하는 클로저를 파라미터로 하는 경우
 func dangerousArgument(_ argFunc : () throws -> () ) {
    do {
       try argFunc()
@@ -101,51 +101,7 @@ func dangerousArgument(_ argFunc : () throws -> () ) {
 dangerousArgument(dangerousFunction)
 
 
+// 예외가 발생할 수 있는 클로저를 반환 타입으로 하는 경우
 func dangerousReturnFunc() -> () throws -> ()  {
    return dangerousFunction
 }
-
-
-func doIt() {
-   do {
-      try dangerousFunction()
-   }
-   catch let error {
-      print("Error : ", error)
-   }
-}
-doIt()
-
-
-// 에러 전파하기
-func doIt2() throws {
-   try dangerousFunction()
-}
-
-do {
-   try doIt2()
-}
-catch let error {
-   print("Error : ", error)
-}
-
-// rethrows
-func doIt3(_ argFunc : () throws -> () ) rethrows {
-   try argFunc()
-}
-
-do {
-   try doIt3(dangerousFunction)
-}
-catch let error {
-   print("Error : ", error)
-}
-
-
-// rethrows는 함수 내부에서의 에러만 전파 가능
-func doIt4(_ argFunc : () throws -> () ) rethrows {
-   try argFunc()
-//   throw CustomError.MyFault // Error -
-}
-
-
