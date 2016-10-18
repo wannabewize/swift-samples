@@ -5,7 +5,7 @@ print("= Read Value")
 func greeting() -> () -> () {
    let str = "Hello"
    return {
-//      () -> () in
+      //      () -> () in
       print(str)
    }
 }
@@ -28,7 +28,7 @@ func increment() -> (Int) -> Int {
 // 값을 쓰기
 //
 print("= Write Value")
-func incrementBy(amount : Int) -> () -> () {
+func increment(by amount : Int) -> () -> () {
    // 클로저에서 count 캡춰
    var count = 0
    return {
@@ -37,11 +37,11 @@ func incrementBy(amount : Int) -> () -> () {
    }
 }
 
-var step2 = incrementBy(2)
+var step2 = increment(by: 2)
 step2() // 2
 step2() // 4
 
-var step3 = incrementBy(3)
+var step3 = increment(by: 3)
 step3() // 3
 step3() // 6
 step3() // 9
@@ -60,7 +60,7 @@ class MyClass {
 }
 
 
-func incrementBy2(amount : Int) -> () -> () {
+func increment2(by amount : Int) -> () -> () {
    let countObj = MyClass()
    return {
       countObj.value += amount
@@ -69,11 +69,11 @@ func incrementBy2(amount : Int) -> () -> () {
 }
 
 
-var step4 = incrementBy2(2)
+var step4 = increment2(by: 2)
 step4()
 step4()
 
-var step5 = incrementBy2(3)
+var step5 = increment2(by: 3)
 step5()
 step5()
 step5()

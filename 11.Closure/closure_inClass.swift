@@ -1,6 +1,13 @@
+/*
+ * 클로저를 사용하는 클래스
+ */
+
 class MyClosureClass {
    var value = 0
-   
+
+   // 클로저 타입의 프로퍼티
+   var closureProperty : (()->Int)!
+
    // 클로저를 반환하는 메소드
    func showAndPrint() -> () -> () {
       return {
@@ -9,8 +16,6 @@ class MyClosureClass {
       }
    }
    
-   // 클로저 타입의 프로퍼티
-   var closureProperty : (()->Int)!
 }
 
 var obj = MyClosureClass()

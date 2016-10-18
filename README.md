@@ -121,14 +121,15 @@ Swift3 Samples
 
 ## 11.클로저(Closure)
 - 클로저
-   * function_type.swift : 함수 타입
-   * array_sort.swift : 배열의 API에서 클로저 사용
-   * closuere.swift : 클로저 사용 함수 작성하기
+   * function_object : 함수를 객체로 다루기
+   * function_type : 함수 타입
+   * array_sort : 배열의 API에서 클로저 사용
+   * closure_api : 클로저 사용 함수 작성하기
    * closure_inClass.swift : 클래스 내 메소드와 프로퍼티로 사용하기
    * capture.swift : 클로저와 캡춰
-   * capture_unowned.swift : 클로저에서 소유하지 않기(unowned)
-   * noescape.swift : noescape 클로저
-   * autoclosure.swift : autoclosure
+   * capture_reference : 클로저와 객체 캡춰, 캡춰시 객체 소유하지 않기(unowned)
+   * escaping : non-escaping, escaping 클로저
+   * autoclosure : autoclosure
    
 ## 12.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기

@@ -1,24 +1,18 @@
 var value = 0
-let closureExpress = { value += 10 }
 
-print(value) // 0
-closureExpress()
-print(value) // 10
-
-
-func doIt( arg : () -> () ) {
+func doIt(_ arg : () -> () ) {
    arg()
-   print(value)
 }
 
-doIt( {value += 10} )
+doIt( { value += 10 } )
+print("클로저 입력, 실행 결과", value)
 
-func doIt2(@autoclosure arg : () -> () ) {
+func doIt2(_ arg : @autoclosure () -> () ) {
    arg()
-   print("autoclosure example : ",value)
 }
 
 doIt2(value += 10)
+print("autoclosure 실행 결과 : ",value)
 
 
 /*
@@ -26,11 +20,15 @@ doIt2(value += 10)
  */
 
 
-var escapeVar : (()->String)!
+var escapedVar : ( () -> () )!
 
-func doIt3(@autoclosure(escaping) arg : () -> String ) {
-   print(arg())
-   escapeVar = arg
+func doIt3(_ arg : @escaping @autoclosure () -> () ) {
+   arg()
+   escapedVar = arg
 }
 
-doIt3("value = \(value)")
+doIt3( value += 10 )
+print("autoclosure, escping 결과 : ", value)
+
+escapedVar()
+print("escaping된 프로퍼티 실행 : ", value)
