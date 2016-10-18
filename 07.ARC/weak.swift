@@ -6,7 +6,7 @@ class Person {
 }
 
 class Phone {
-   // 소유하지 않는 참조
+   // 소유하지 않는 참조. weak는 옵셔널로만 선언 가능
    weak var owner : Person?
    deinit {
       print("Phone 객체 해제")
@@ -21,5 +21,5 @@ iphone.owner = owner
 owner.phone = iphone
 
 owner = nil
-iphone.owner // nil
+print(iphone.owner) // nil
 iphone = nil

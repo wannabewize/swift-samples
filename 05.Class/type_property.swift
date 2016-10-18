@@ -16,5 +16,5 @@ var obj = Rectangle()
 obj.width = 10
 
 // 타입 프로퍼티 접근
-Rectangle.edge // 4
-Rectangle.name
+print(Rectangle.edge) // 4
+print(Rectangle.name)

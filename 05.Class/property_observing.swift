@@ -14,10 +14,19 @@ class Rectangle {
          print("사각형 높이 변경됨. 기존 높이 : \(oldValue) -> 새로운 높이 : \(height)")
       }
    }
+   
+   init() {
+      // Initializer에서 프로퍼티 값 변경에는 동작하지 않는다.
+      width = 1
+      height = 1
+   }
 }
 
 
-var rect4 = Rectangle()
-rect4.height = 50
-rect4.height = -30
-rect4.height		// 0
+print("== 객체 생성")
+var obj = Rectangle()
+
+print("== 프로퍼티 변경 시작")
+obj.height = 50
+obj.height = -30
+print(obj.height)		// 0

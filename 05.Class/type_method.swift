@@ -3,7 +3,7 @@ class MyClass {
    
    // 타입 메소드
    static func typeMethod() {
-//      property = 2 	// 에러. 타입 메소드에서 프로퍼티 접근 불가
+      // property = 2 	// 에러. 타입 메소드에서 프로퍼티 접근 불가
       print("Type method works")
    }
    

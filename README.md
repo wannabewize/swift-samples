@@ -30,53 +30,56 @@ Swift3 Samples
 - 반목문
    * for : for 반복문
    * while : while, repeat-while 반복문
+   * label : label을 이용한 흐름 제어문
+
 - 조건문
    * if : if 조건문
    * switch-case : switch-case
    * guard : guard
-   * label : label을 이용한 흐름 제어문
    * version-check : #avilable을 이용한 플랫폼, 버전 체크
    
 ## 03.옵셔널(Optional)
-
    * optional : 옵셔널 타입, 옵셔널 체임, ?? 연산자
    * optional_binding : if와 guard를 이용한 옵셔널 바인딩
    * forcedUnwrapping : 강제 언래핑, 암시적 언래핑 옵셔널 타입(IUO)
 
 ## 04.함수(Function)
-- 함수
-   * basic.swift : 함수 기본, 반환값
-   * parameter1.swift : 함수 파라미터, 파라미터 이름(내부, 외부)
-   * parameter2.swift : 가변 길이 파라미터, 파라미터 변수, inout 파라미터
-   * parameter_default.swift : 기본값을 가진 파라미터
-   * optioanl.swift : 옵서널 타입
+   * basic : 함수 기본, 반환값
+   * parameter : 함수 파라미터, 외부 파라미터 설정
+   * overroading : 함수 오버로딩(클래스/구조체에도 동일 적용)
+   * defaultValue_parameter : 기본값을 가진 파라미터
+   * varidic_parameter : 가변 길이 파라미터
+   * inout_parameter : Inout 파라미터
+   * optioanl : 파라미터나 반환으로 nil 다루기
 
 ## 05.클래스(Class), 메소드
+
 - 클래스 정의, 객체 생성, 프로퍼티, 메소드
-   * declaration.swift
-   * computed_property.swift : 계산 프로퍼티
-   * method.swift : 메소드
+   * basic : 클래스 정의와 객체 생성, 프로퍼티
+   * computed_property : 계산 프로퍼티
+   * referenceType : 레퍼런스 타입 객체
+   * method.swift : 메소드 정의와 호출
+   
 - Initializer, Deinit
-   * innitializer.swift : Designated Initializer
-   * initializer_convenience.swift : Convenince Initializer
-   * initializer_failalbe.swift : Failable Initializer
-   * deinit.swift : Deinitializer 
+   * innitializer : Designated Initializer
+   * initializer_convenience : Convenince Initializer
+   * initializer_failalbe : Failable Initializer
+   * deinit : Deinitializer 
 - 타입 메소드, 프로퍼티, 프로퍼티 감시
-   * type_method.swift
-   * type_property.swift
-   * property_observing.swift
-   * property_lazy.swift
+   * type_method : 타입 메소드
+   * type_property : 타입 프로퍼티
+   * property_observing : 프로퍼티 감시
+   * property_lazy : 늦은 프로퍼티 초기화
    
 ## 07.ARC
 - 객체 생성과 해제, 소유권
-   * basic.swift
-   * scope.swift
+   * basic : 객체 생성과 소유, 객체 해제
+   * scope : 스코프에 의한 소유권 해제와 객체 해제
+   * collection : 콜렉션에 의한 객체 소유와 해제
 - 객체 순환 참조(소유), 약한 참조
-   * referenceCycle.swift
-   * weakPointer.swift
-   * unowned.swift
-- 콜렉션
-   * arc_collection.swift
+   * referenceCycle : 강한 순환 참조로 인한 객체가 해제되지 않는 상황
+   * weak : 객체를 소유하지 않는 약한 참조(weak reference) 
+   * unowned : 객체를 소유하지 않는 약한 참조 중 unowned
 
 ## 08.클래스 상속(Inheritance)
 - 상속, 재정의
