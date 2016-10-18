@@ -1,3 +1,7 @@
+/*
+ * Enum, Association
+ */
+
 enum ArrivalStatus {
    case OnTime
    case Dalay(Int)

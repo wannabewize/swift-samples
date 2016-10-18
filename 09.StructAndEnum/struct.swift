@@ -1,3 +1,7 @@
+/*
+ * Struct 정의와 객체 생성
+ */
+
 // Initializer가 없는 Struct
 struct Point {
    var x : Int = 0
@@ -23,5 +27,5 @@ struct Point2 {
 
 
 var obj3 = Point2()
-// Error : Initializer를 작성했기 때문에 자동 생성 안됨 
+// Error : Initializer를 작성했기 때문에 자동 생성 안됨
 // var obj4 = Point2(x : 10, y : 10)

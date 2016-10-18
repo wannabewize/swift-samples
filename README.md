@@ -99,15 +99,15 @@ Swift3 Samples
    
 ## 09.구조체와 Enum
 - 구조체
-   * struct.swift
-   * struct_static.swift : 타입 프로퍼티와 메소드
-   * struct_mutation.swift : 밸류 타입 상태 변경
+   * struct : 구조체, 프로퍼티와 메소드, Initializer
+   * struct_static : 타입 프로퍼티와 메소드
+   * struct_mutation : 밸류 타입 상태 변경
 - 밸류 타입과 레퍼런스 타입
-   * valueType_referenceType.swift
+   * valueType_referenceType : 밸류 타입과 레퍼런스 타입 비교
 - Enum
-   * enum.swift : Enum 정의, switch, rawvalue
-   * enum_method.swift : 메소드, 프로퍼티
-   * enum_association.swift
+   * enum: Enum 정의, switch, rawvalue
+   * enum_method : Enum에 메소드, 프로퍼티 작성
+   * enum_association : Enum과 Association
    
 ## 10.프로토콜(Protocol)
 - 프로토콜

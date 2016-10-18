@@ -1,3 +1,7 @@
+/*
+ * Enum에 프로퍼티와 메소드 작성
+ */
+
 enum Pet : Int {
    case Cat = 0
    case Dog
@@ -21,5 +25,5 @@ enum Pet : Int {
 
 // 프로퍼티와 메소드 사용
 var raz = Pet.Cat
-raz.name
-raz.description()
+print(raz.name)
+print(raz.description())

@@ -1,3 +1,7 @@
+/*
+ * 구조체 - 정적 메소드와 프로퍼티
+ */
+
 struct MyStruct {
    // 정적 메소드 정의
    static func staticFunc() {
