@@ -49,8 +49,9 @@ Swift3 Samples
    * overroading : 함수 오버로딩(클래스/구조체에도 동일 적용)
    * defaultValue_parameter : 기본값을 가진 파라미터
    * varidic_parameter : 가변 길이 파라미터
-   * inout_parameter : Inout 파라미터
+   * inout_parameter : Inout 파라미터   
    * optioanl : 파라미터나 반환으로 nil 다루기
+   * nestedFunction : 함수 내부에 함수 정의하기
 
 ## 05.클래스(Class), 메소드
 
