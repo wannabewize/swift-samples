@@ -1,4 +1,11 @@
-protocol Movable {   
+/*
+ * 프로토콜 extension
+ */
+
+protocol Movable {
+}
+
+struct Human : Movable {
 }
 
 // 프로토콜 확장 – 구현 작성 가능
@@ -8,12 +15,8 @@ extension Movable {
    }
 }
 
-struct Human : Movable {   
-}
-
 var man = Human()
-man.move()
-
+man.move() // 기본 구현처럼 동작
 
 
 protocol Flyable {
@@ -25,7 +28,8 @@ extension Flyable {
    }
 }
 
-class Superman : Movable, Flyable {   
+class Superman : Movable, Flyable {
+   // 프로토콜 구현을 재정의
    func move() {
       print("Move Fast")
    }

@@ -146,11 +146,16 @@ Swift3 Samples
    * defer : defer를 이용한 예외 상황 마무리 동작
    
 ## 14.Extension
-- 확장
-   * extension.swift
+   * extension : 타입 확장
+   * extension_struct_enum : 구조체와 Enum 확장
+   * extension_existingType : 기존 타입 확장(String)
+   * protocol_extension : 프로토콜 확장
+
+## 15.Operator   
+
    * subscript.swift : 첨자 표기, 확장
    * nested_type.swift : 중첩 타입
-   * protocol_extension.swift
+   
 
 ## 15.Operator
 - 연산자 정의
