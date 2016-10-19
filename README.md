@@ -98,16 +98,14 @@ Swift3 Samples
    * two_phase_initialization : 2단계 초기화      
    
 ## 09.구조체와 Enum
-- 구조체
    * struct : 구조체, 프로퍼티와 메소드, Initializer
    * struct_static : 타입 프로퍼티와 메소드
    * struct_mutation : 밸류 타입 상태 변경
-- 밸류 타입과 레퍼런스 타입
    * valueType_referenceType : 밸류 타입과 레퍼런스 타입 비교
-- Enum
    * enum: Enum 정의, switch, rawvalue
    * enum_method : Enum에 메소드, 프로퍼티 작성
    * enum_association : Enum과 Association
+   * nestedType : 중첩 타입
    
 ## 10.프로토콜(Protocol)
 - 프로토콜
@@ -151,20 +149,15 @@ Swift3 Samples
    * extension_existingType : 기존 타입 확장(String)
    * protocol_extension : 프로토콜 확장
 
-## 15.Operator   
+## 15.Generic
+- 작성중
 
-   * subscript.swift : 첨자 표기, 확장
-   * nested_type.swift : 중첩 타입
-   
-
-## 15.Operator
-- 연산자 정의
+## 16.Operator
    * overloading.swift
    * equal.swift : 동등 연산자 작성
    * custom_operator.swift : 새로운 연산자 정의
+   * subscript.swift : 첨자 표기, 확장
    
-## 16.Generic
-- 작성중
 
 ## 17.접근 조절
 - 작성중

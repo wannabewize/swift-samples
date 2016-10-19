@@ -1,4 +1,8 @@
-class Rectangle {
+/*
+ * 타입 내장
+ */
+
+struct Rectangle {
    struct Point {
       var x, y : Int
    }
@@ -18,6 +22,7 @@ class Rectangle {
 
 let point = Rectangle.Point(x: 10, y: 10)
 print("Rectangle.Point : ", point)
+
 let size = Rectangle.Size(width: 100, height: 100)
 print("Rectangle.Size : ", size)
 
