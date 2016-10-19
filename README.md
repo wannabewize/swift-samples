@@ -168,11 +168,14 @@ Swift3 Samples
    
 ## 19.파운데이션
 - NSObject
-   * nsobject_equal.swift : 객체 비교 isEqual(_:)
-   * selector.swift : Selector
-   * description.swift
+   * nsobject_equal : NSObject와 객체 비교 isEqual(_:)
+   * nsobject_typecheck : NSObject와 객체 비교 : isKind(of:), isMember(of:)
+   * selector : Selector
+   * selector_ambiguous : Selector Ambiguous 에러와 해결 방법
+   * selector_perform : 셀렉터 동작 검사와 실행
+   * nsobject_description : 객체 설명
 - Protocol
-   * protocol_optional.swift : 옵셔널 항목
+   * protocol_optional : 프로토콜 내 선택적 구현 항목   
 - 문자열
    * string1.swift
    * string2.swift

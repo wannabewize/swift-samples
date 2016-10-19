@@ -3,7 +3,6 @@ import Foundation
 NSLog("Hello %@", "Foundation")
 NSLog("%d + %d = %d", 1, 2, (1+2))
 
-
 class Rectangle : NSObject {
    var width = 0
    var height = 0
