@@ -150,8 +150,9 @@ Swift3 Samples
    * extension_existingType : 기존 타입 확장(String)
    * protocol_extension : 프로토콜 확장
 
-## 15.Generic
-- 작성중
+## 15.Generics
+   * generics : 배열과 딕셔너리 타입별 객체 생성과 사용
+   * customGenerics : 제네릭스로 타입 추상화된 함수와 타입 작성하기
 
 ## 16.Operator
    * overloading.swift
