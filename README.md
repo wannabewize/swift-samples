@@ -131,7 +131,13 @@ Swift3 Samples
    * escaping : non-escaping, escaping 클로저
    * autoclosure : autoclosure
    
-## 12.에러 처리(Error Handling)
+## 12.TypeCheck
+   * any : Any, AnyObject 타입. 동적인 타입 변경   
+   * type_check : is를 이용한 타입 체크
+   * type_cast : as를 이용한 타입 변환   
+   * typealias : 타입 알리아스
+   
+## 13.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기
    * error : 에러 정의, 에러 발생과 다루기
    * error_function : 에러가 발생하는 함수 작성, 호출. 반환값
@@ -139,24 +145,18 @@ Swift3 Samples
    * error_closure : 에러 발생 클로저 사용하기.
    * defer : defer를 이용한 예외 상황 마무리 동작
    
-## 13.Extension
+## 14.Extension
 - 확장
    * extension.swift
    * subscript.swift : 첨자 표기, 확장
    * nested_type.swift : 중첩 타입
    * protocol_extension.swift
 
-## 14.Operator
+## 15.Operator
 - 연산자 정의
    * overloading.swift
    * equal.swift : 동등 연산자 작성
    * custom_operator.swift : 새로운 연산자 정의
-   
-## 15.TypeCheck
-- AnyType, 타입 체크, 타일 알리아스
-   * type_check.swift : is를 이용한 타입 체크, as를 이용한 타입 변환
-   * any.swift
-   * typealias.swift
    
 ## 16.Generic
 - 작성중
