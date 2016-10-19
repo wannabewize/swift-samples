@@ -133,9 +133,10 @@ Swift3 Samples
    
 ## 12.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기
-   * error : 에러 정의, 에러 다루기
-   * try_optional : try와 옵셔널을 사용한 에러 다루기
-   * error_Propagation : 에러 전파
+   * error : 에러 정의, 에러 발생과 다루기
+   * error_function : 에러가 발생하는 함수 작성, 호출. 반환값
+   * error_propagation : 에러 전파
+   * error_closure : 에러 발생 클로저 사용하기.
    * defer : defer를 이용한 예외 상황 마무리 동작
    
 ## 13.Extension
