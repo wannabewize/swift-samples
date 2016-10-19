@@ -161,11 +161,10 @@ Swift3 Samples
    * subscript : 첨자 표기   
 
 ## 17.접근 조절
-- 작성중
+   * AccessLevel : 접근 레벨
 
 ## 18.디자인 패턴
-- 디자인 패턴
-   * singleton.swift : 싱글턴 패턴
+   * singleton : 싱글톤 패턴
    
 ## 19.파운데이션
 - NSObject
