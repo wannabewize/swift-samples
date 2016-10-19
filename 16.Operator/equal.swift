@@ -1,13 +1,17 @@
-struct Size : Equatable {
+/*
+ * 객체 비교
+ */
+
+struct Size {
    var width, height : Int
 }
 
-// == 연산자 기능 정의
-func ==(lhs: Size, rhs: Size) -> Bool {
-   return lhs.width == rhs.width && lhs.height == rhs.height
+extension Size : Equatable {
+   // == 연산자 기능 정의
+   static func ==(lhs: Size, rhs: Size) -> Bool {
+      return lhs.width == rhs.width && lhs.height == rhs.height
+   }
 }
-
-
 
 var obj1 = Size(width: 10, height: 10)
 var obj2 = Size(width: 10, height: 10)
@@ -22,23 +26,23 @@ extension Size : Comparable {
    func size() -> Int {
       return width * height
    }
+   
+   static func <=(lhs: Size, rhs: Size) -> Bool {
+      return lhs.size() <= rhs.size()
+   }
+   
+   static func >=(lhs: Size, rhs: Size) -> Bool {
+      return lhs.size() >= rhs.size()
+   }
+   
+   static func >(lhs: Size, rhs: Size) -> Bool {
+      return lhs.size() > rhs.size()
+   }
+   
+   static func <(lhs: Size, rhs: Size) -> Bool {
+      return lhs.size() < rhs.size()
+   }
 }
-
-func <=(lhs: Size, rhs: Size) -> Bool {
-   return lhs.size() <= rhs.size()
-}
-
-func >=(lhs: Size, rhs: Size) -> Bool {
-   return lhs.size() >= rhs.size()
-}
-func >(lhs: Size, rhs: Size) -> Bool {
-   return lhs.size() > rhs.size()
-}
-
-func <(lhs: Size, rhs: Size) -> Bool {
-   return lhs.size() < rhs.size()
-}
-
 
 print("Size(10,10) <= Size(10,10) : ", obj1 <= obj2) // true
 print("Size(10,10) < Size(20,20) : ", obj1 < obj3) // true

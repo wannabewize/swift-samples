@@ -1,3 +1,7 @@
+/*
+ * 첨자 표기(Subscript)
+ */
+
 class MyClass {
    // 숫자 인덱스를 문자로
    subscript (index : Int) -> String {
@@ -19,20 +23,22 @@ print("커스텀 타입에 첨자 표기[\"77\"] : ", obj["77"]) // 2
 //
 
 extension String {
-   // 특정 인덱스에 해당하는 문자열
-   subscript(index:Int) -> String {
-      return self[index..<index]
+   // 범위 내 문자열.
+   subscript(range:CountableRange<Int>) -> String? {
+      guard let start = self.index(startIndex, offsetBy: range.startIndex, limitedBy : endIndex),
+         let end = self.index(startIndex, offsetBy: range.endIndex, limitedBy: endIndex) else {
+            return nil
+      }
+      return self[start..<end]
    }
-   
-   // 범위 내 문자열
-   subscript(range:Range<Int>) -> String {
-      let start = startIndex.advancedBy(range.startIndex, limit: endIndex)
-      let end = startIndex.advancedBy(range.endIndex, limit: endIndex)
-      return self[start...end]
+
+   // 특정 인덱스에 해당하는 문자열
+   subscript(index:Int) -> String? {
+      return self[index..<index]
    }
 }
 
 let str = "Hello Swift"
 print("str[3] : ",str[3]) // l
-print("str[6...9] : ", str[6...9])  // Swift
+print("str[6..<11] : ", str[6..<11])  // Swift
 

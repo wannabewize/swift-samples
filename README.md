@@ -155,11 +155,10 @@ Swift3 Samples
    * customGenerics : 제네릭스로 타입 추상화된 함수와 타입 작성하기
 
 ## 16.Operator
-   * overloading.swift
-   * equal.swift : 동등 연산자 작성
-   * custom_operator.swift : 새로운 연산자 정의
-   * subscript.swift : 첨자 표기, 확장
-   
+   * overloading : 연산지 오버로딩
+   * equal : 객체 비교 연산자 오버로딩
+   * custom_operator : 새로운 연산자 선언, 정의
+   * subscript : 첨자 표기   
 
 ## 17.접근 조절
 - 작성중
