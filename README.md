@@ -161,7 +161,8 @@ Swift3 Samples
    * subscript : 첨자 표기   
 
 ## 17.접근 조절
-   * AccessLevel : 접근 레벨
+   * AccessLevel : 커맨드라인 프로젝트 내 프레임워크를 사용한 접근 조절 예제. 동작안하니 코드 작성과 컴파일만 참고.
+   * AccessLevelApp : iOS 프로젝트 내 프레임워크를 사용한 접근 조절 예제. 동작함.
 
 ## 18.디자인 패턴
    * singleton : 싱글톤 패턴
