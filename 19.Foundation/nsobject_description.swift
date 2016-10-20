@@ -1,3 +1,7 @@
+/*
+ * 객체 설명
+ */
+
 import Foundation
 
 NSLog("Hello %@", "Foundation")

@@ -177,31 +177,35 @@ Swift3 Samples
 - Protocol
    * protocol_optional : 프로토콜 내 선택적 구현 항목   
 - 문자열
-   * string1.swift
-   * string2.swift
-   * string_file.swift : 문자열 저장
-   * string_mutable.swift : NSMutableString
+   * string1, string2 : NSString, String 다루기와 비교
+   * string_fileIO : 문자열 저장
+   * string_referenceType : Reference 타입인 NSString
+   * string_mutable : NSMutableString
 - 배열
-   * array.swift
-   * array_file.swift
-   * array_mutable.swift
+   * array : NSArray, Array 비교, 다루기
+   * array_file : 배열 파일 저장
+   * array_mutable : Mutable Array
 - 딕셔너리
-   * dictionary.swift
+   * dictionary : Dictioanry, NSDictionary 비교, 다루기
+   * dictionary_file : 딕셔너리 파일 저장
 - 날짜와 시간 
-   * date.swift
+   * date : 날짜, 날짜 포맷터, 칼렌더 다루기
 - 파일 다루기
-   * fm_read.swift
-   * fm_list.swift
-   * fm_copyremove.swift
+   * fm_list : 파일 매니저로 파일 목록
+   * fm_copyremove : 파일 매니저로 파일 존재 확인/복사/삭제
+   * fm_read : FileHandler로 파일 내용 읽기/쓰기   
 - 직렬화
-   * archive1.swift : NSKeyedArchiver, Unarchiver
-   * archive2.swift : Custom Class, NSCoding
+   * archive1 : NSKeyedArchiver, Unarchiver
+   * archive2 : Custom Class, NSCoding
+- 타이머
+   * timer : 타이머 예제
 - 알림
-   * notification.swift
+   * notification : 알림
 - 멀티쓰레드
-   * thread1.swift
-   * thread2.swift
+   * thread1 : Thread를 사용한 멀티 쓰레드
+   * thread2 : 큐 기반의 멀티 쓰레드
 - 네트워크
-   * resource_get.swift
-   * jsonParsing1.swift
-   * jsonParsing2.swift
+   * url : URL 생성. 정보 얻기
+   * url_resourceLoading
+- JSON    
+   * json_parsing    

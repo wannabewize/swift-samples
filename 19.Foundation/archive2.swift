@@ -12,15 +12,15 @@ class Person : NSObject, NSCoding {
    }
    
    // 객체 프로퍼티 인코딩
-   func encodeWithCoder(aCoder: NSCoder) {
-      aCoder.encodeObject(name, forKey: "Name")
-      aCoder.encodeInteger(birthYear, forKey: "Year")
+   func encode(with aCoder: NSCoder) {
+      aCoder.encode(name, forKey: "Name")
+      aCoder.encode(birthYear, forKey: "Year")
    }
    
    // 객체 프로퍼티 디코딩
    required init(coder aDecoder: NSCoder) {
-      name = aDecoder.decodeObjectForKey("Name") as! String
-      birthYear = aDecoder.decodeIntegerForKey("Year")
+      name = aDecoder.decodeObject(forKey:"Name") as! String
+      birthYear = aDecoder.decodeInteger(forKey:"Year")
    }
 }
 
@@ -33,19 +33,19 @@ let filePath = "/Users/wannabewize/Documents/data.dat"
 let ret = NSKeyedArchiver.archiveRootObject(obj, toFile: filePath)
 
 // 복원
-if let obj = NSKeyedUnarchiver.unarchiveObjectWithFile(filePath) as? Person {
+if let obj = NSKeyedUnarchiver.unarchiveObject(withFile:filePath) as? Person {
    print("name : \(obj.name) - birthYear : \(obj.birthYear)")
 }
 
 
 class Actor : Person {
-   var filmography : [NSString]?
-   override func encodeWithCoder(aCoder: NSCoder) {
-      aCoder.encodeObject(filmography, forKey: "Filmography")
-      super.encodeWithCoder(aCoder)
+   var filmography : [String]?
+   override func encode(with aCoder: NSCoder) {
+      aCoder.encode(filmography, forKey: "Filmography")
+      super.encode(with: aCoder)
    }
    required init(coder aDecoder: NSCoder) {
-      self.filmography = aDecoder.decodeObjectForKey("Filmography") as! [String]
+      self.filmography = aDecoder.decodeObject(forKey: "Filmography") as? [String]
       super.init(coder: aDecoder)
    }
    override init(name : String, birthYear : Int) {
@@ -59,9 +59,9 @@ var actor = Actor(name: "스칼렛 요한슨", birthYear: 1984)
 actor.filmography = ["루시", "어밴져스"]
 
 // 인코딩
-let dataActor = NSKeyedArchiver.archivedDataWithRootObject(actor)
+let dataActor = NSKeyedArchiver.archivedData(withRootObject:actor)
 
 // 디코딩
-if let obj = NSKeyedUnarchiver.unarchiveObjectWithData(dataActor) as? Actor {
+if let obj = NSKeyedUnarchiver.unarchiveObject(with: dataActor) as? Actor {
    print("actor2 name : \(obj.name) birthYear : \(obj.birthYear) filmography : \(obj.filmography)")
 }

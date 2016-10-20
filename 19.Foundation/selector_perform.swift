@@ -4,35 +4,28 @@
 
 import Foundation
 
-class MyClass : NSObject {
-   func sayHello() {
-      print("Hello")
+class SayClass : NSObject {
+   func sayYes() {
+      print("YES!")
    }
    
-   func greet(who : String) {
-      print("Hello \(who)")
-   }
-   
-   static func greet(who : String) {
-      print("Static Hello : \(who)")
+   func say(what : String) {
+      print("\(what)!")
    }
 }
 
-let obj = MyClass()
+let say = SayClass()
 
 // 셀렉터 검사
-let sel = #selector(MyClass.sayHello)
-if obj.responds(to: sel) {
+let sel = #selector(SayClass.sayYes)
+if say.responds(to: sel) {
    print("셀렉터 동작 확인")
-   obj.perform(sel)
+   say.perform(sel)
 }
 else {
    print("셀렉터 동작 안함")
 }
 
-
 // 파라미터가 있는 셀렉터 실행
-obj.perform(#selector(MyClass.greet(who:)), with: "IU")
+say.perform(#selector(SayClass.say(what:)), with: "Good Morning")
 
-// 타입 메소드의 셀렉터 실행
-MyClass.perform(#selector(MyClass.greet(who:)), with: "SH")
