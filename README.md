@@ -16,7 +16,7 @@ Swift3 Samples
    * type_String : 문자열 타입
    * type_String_compare : 문자열 비교
    * type_String_modify : 문자열 수정
-   * type_String_operation : 문자열 다루기
+   * type_String_operation : 문자열 인덱스(String.Index)를 이용한 문자열 다루기
    * type_String_views : 문자열과 뷰
 - 다수의 데이터 다루기
    * type_Tuple : 튜플
@@ -24,7 +24,7 @@ Swift3 Samples
    * type_Dictionary : 딕셔너리 타입
    * type_Set : 셋 타입
 - 밸류 타입
-   * valuetype : 밸류 타입   
+   * valueType : 밸류 타입의 특징. 배열을 사용한 예제
 
 ## 02.제어문(Controls)
 - 반목문
