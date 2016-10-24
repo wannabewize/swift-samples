@@ -22,6 +22,7 @@ Swift3 Samples
    * type_Tuple : 튜플
    * type_Array : 배열
    * type_Dictionary : 딕셔너리 타입
+   * complex_Collection : 복합 타입 : 2차원 배열, 배열과 딕셔너리 혼합 사용
    * type_Set : 셋 타입
 - 밸류 타입
    * valueType : 밸류 타입의 특징. 배열을 사용한 예제
