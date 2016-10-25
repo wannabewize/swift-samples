@@ -36,23 +36,23 @@ Swift3 Samples
 - 조건문
    * if : if 조건문
    * switch-case : switch-case
-   * guard : guard
+   * guard : guard 
    * version-check : #avilable을 이용한 플랫폼, 버전 체크
    
 ## 03.옵셔널(Optional)
-   * optional : 옵셔널 타입, 옵셔널 체임, ?? 연산자
+   * optional : 옵셔널 타입, 옵셔널 체d인, ?? 연산자
    * optional_binding : if와 guard를 이용한 옵셔널 바인딩
    * forcedUnwrapping : 강제 언래핑, 암시적 언래핑 옵셔널 타입(IUO)
 
 ## 04.함수(Function)
-   * basic : 함수 기본, 반환값
+   * function : 함수 기본, 반환값
    * parameter : 함수 파라미터, 외부 파라미터 설정
-   * overroading : 함수 오버로딩(클래스/구조체에도 동일 적용)
-   * defaultValue_parameter : 기본값을 가진 파라미터
-   * varidic_parameter : 가변 길이 파라미터
-   * inout_parameter : Inout 파라미터   
+   * overloading : 같은 함수 이름 but 다른 함수 파라미터 타입, 다른 외부 파라미터 이름.
+   * parameter_defaultValue : 기본값을 가진 파라미터
+   * parameter_varidic : 가변 길이 파라미터
+   * parameter_inout : Inout 파라미터   
    * optioanl : 파라미터나 반환으로 nil 다루기
-   * nestedFunction : 함수 내부에 함수 정의하기
+   * nested_function : 함수 내부에 함수 정의하기
 
 ## 05.클래스(Class), 메소드
 
