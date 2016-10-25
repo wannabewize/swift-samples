@@ -19,4 +19,3 @@ class MyClass : NSObject, Baking {
    
    // duration 구현 안함
 }
-

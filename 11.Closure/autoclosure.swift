@@ -1,3 +1,6 @@
+/**
+ * autoclosure
+ */
 var value = 0
 
 func doIt(_ arg : () -> () ) {
