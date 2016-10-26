@@ -1,3 +1,6 @@
+/**
+ * Failable Initializer 상속
+ */
 class Parent {
    var value : Int
    

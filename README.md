@@ -85,33 +85,30 @@ Swift3 Samples
 ## 08.클래스 상속(Inheritance)
 - 상속, 재정의
    * override : 상속과 재정의
-   * super_self.swift
-- 상속과 Initializer
-   * initializer_inherite1 : Initializer 상속
-   * initializer_inherite2 : Initializer 상속
-   * initializer_required : required Initializer
- 
-- 자식 클래스의 Initializer
-   * initializer_in_child1 : 자식 클래스의 Designated Initializer
-   * initializer_in_child2 : 자식 클래스의 Convenience Initializer  
+   * super_self  : 클래스 상속시 self, super 참조
+
+   * initializer_inherite1 : Initializer 상속. 자식 클래스에 Designated Initializer를 작성하지 않은 경우
+   * initializer_in_child1 : 자식 클래스에 Designated Initializer 작성하기 
+   * initializer_in_child2 : 자식 클래스에 Convenience Initializer 작성하기  
    * initializer_override1 : Initializer 재정의
-   * initializer_override2 : Failable initializer 재정의
+   * initializer_inherite2 : Initializer 상속. 자식 클래스에서 모든 Designated Initializer를 재정의하는 경우 Convenience Initializer 상속
    * two_phase_initialization : 2단계 초기화      
+   * initializer_required : required Initializer
+   * initializer_override2 : Failable initializer 재정의
    
 ## 09.구조체와 Enum
    * struct : 구조체, 프로퍼티와 메소드, Initializer
    * struct_static : 타입 프로퍼티와 메소드
    * struct_mutation : 밸류 타입 상태 변경
-   * valueType_referenceType : 밸류 타입과 레퍼런스 타입 비교
+   * value_reference_type : 밸류 타입과 레퍼런스 타입 비교
    * enum: Enum 정의, switch, rawvalue
    * enum_method : Enum에 메소드, 프로퍼티 작성
    * enum_association : Enum과 Association
-   * nestedType : 중첩 타입
+   * nested_type : 중첩 타입
    
 ## 10.프로토콜(Protocol)
 - 프로토콜
-   * basic : 프로토콜 선언, 클래스와 구조체 채택
-   * type_method : 프로토콜 내 타입 메소드 선언
+   * protocol_basic : 프로토콜 선언, 클래스와 구조체 채택
    * static_method : 프로토콜 내 타입 메소드
    * property : 프로토콜 내 프로퍼티 선언
    * initializer : 프로토콜 내 Initializer 선언
@@ -119,13 +116,12 @@ Swift3 Samples
    * class_only : 클래스 전용 프로토콜
 
 ## 11.클로저(Closure)
-- 클로저
    * function_object : 함수를 객체로 다루기
    * function_type : 함수 타입
    * array_sort : 배열의 API에서 클로저 사용
    * closure_api : 클로저 사용 함수 작성하기
-   * closure_inClass.swift : 클래스 내 메소드와 프로퍼티로 사용하기
-   * capture.swift : 클로저와 캡춰
+   * closure_inClass : 클래스 내 메소드와 프로퍼티로 사용하기
+   * capture : 클로저와 캡춰
    * capture_reference : 클로저와 객체 캡춰, 캡춰시 객체 소유하지 않기(unowned)
    * escaping : non-escaping, escaping 클로저
    * autoclosure : autoclosure
@@ -147,12 +143,12 @@ Swift3 Samples
 ## 14.Extension
    * extension : 타입 확장
    * extension_struct_enum : 구조체와 Enum 확장
-   * extension_existingType : 기존 타입 확장(String)
+   * extension_existing_type : 기존 타입 확장(String)
    * protocol_extension : 프로토콜 확장
 
 ## 15.Generics
    * generics : 배열과 딕셔너리 타입별 객체 생성과 사용
-   * customGenerics : 제네릭스로 타입 추상화된 함수와 타입 작성하기
+   * custom_type_generics : 제네릭스로 타입 추상화된 함수와 타입 작성하기
 
 ## 16.Operator
    * overloading : 연산지 오버로딩
