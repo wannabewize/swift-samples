@@ -2,9 +2,12 @@ import Foundation
 
 var swiftDic = ["Key1":"Value1", "Key2":"Value2"]
 var nsDic : NSDictionary = [1 : "one", 2 : "two"]
-
+// Any 타입이므로 각 원소 별 타입을 다르게 할 수 있다.
+let nsDic2 = NSDictionary(dictionaryLiteral: ("One", 1), (2, "Two"), (3, 3))
+print(nsDic2)
 
 let dic : NSDictionary = [1 : "January", 2 : "Febrary", 3 : "March", 4 : "April"]
+
 
 let item1 = dic[1]
 let item2 = dic.object(forKey:2)

@@ -172,10 +172,12 @@ Swift3 Samples
    * selector_perform : 셀렉터 동작 검사와 실행
    * nsobject_description : 객체 설명
 - Protocol
-   * protocol_optional : 프로토콜 내 선택적 구현 항목   
+   * protocol_optional : 프로토콜 내 선택적 구현 항목
+- 데이터 다루기
+   * type_convert : Foundation Framework 데이터 타입과 Swift 타입 간 변환
 - 문자열
    * string1, string2 : NSString, String 다루기와 비교
-   * string_fileIO : 문자열 저장
+   * string_file : 문자열 저장
    * string_referenceType : Reference 타입인 NSString
    * string_mutable : NSMutableString
 - 배열
@@ -203,6 +205,6 @@ Swift3 Samples
    * thread2 : 큐 기반의 멀티 쓰레드
 - 네트워크
    * url : URL 생성. 정보 얻기
-   * url_resourceLoading
+   * url_resource_loading
 - JSON    
    * json_parsing    

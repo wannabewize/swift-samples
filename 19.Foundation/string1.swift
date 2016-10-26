@@ -32,6 +32,7 @@ var formattedStr2 = NSString(format: "%@ %@", "Hello", "Foundation")
 
 let nsStr1 : NSString = "Hello Foundation"
 let nsStr2 : NSString = "Hello Foundation"
+
 let swiftStr2 = "Hello Foundation"
 
 print("NSString == ", nsStr1 == nsStr2)
