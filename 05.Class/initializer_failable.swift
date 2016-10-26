@@ -1,3 +1,6 @@
+/**
+ * Failable Initializer
+ */
 class Person {
    var birthYear : Int
    

@@ -1,3 +1,6 @@
+/**
+* 저장 프로퍼티와 계산 프로퍼티
+*/
 class Person {
    // 상수
    let thisYear = 2016

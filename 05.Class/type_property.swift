@@ -1,3 +1,6 @@
+/**
+ * 타입 프로퍼티
+ */
 class Rectangle {
    // 인스턴스 프로퍼티
    var width : Int = 0

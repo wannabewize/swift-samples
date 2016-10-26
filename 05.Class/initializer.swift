@@ -1,3 +1,6 @@
+/**
+ * Initializer
+ */
 class Rectangle {
    var width : Int
    var height : Int

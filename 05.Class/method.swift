@@ -1,3 +1,6 @@
+/**
+ * Method
+ */
 class Counter {
    var count = 0
    

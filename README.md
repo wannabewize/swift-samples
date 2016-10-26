@@ -54,14 +54,13 @@ Swift3 Samples
    * optioanl : 파라미터나 반환으로 nil 다루기
    * nested_function : 함수 내부에 함수 정의하기
 
-## 05.클래스(Class), 메소드
+## 05.클래스(Class), 06.메소드
 
 - 클래스 정의, 객체 생성, 프로퍼티, 메소드
-   * basic : 클래스 정의와 객체 생성, 프로퍼티
+   * class_basic : 클래스 정의와 객체 생성, 프로퍼티
    * computed_property : 계산 프로퍼티
-   * referenceType : 레퍼런스 타입 객체
+   * reference_type : 레퍼런스 타입 객체
    * method.swift : 메소드 정의와 호출
-   
 - Initializer, Deinit
    * innitializer : Designated Initializer
    * initializer_convenience : Convenince Initializer
@@ -75,11 +74,11 @@ Swift3 Samples
    
 ## 07.ARC
 - 객체 생성과 해제, 소유권
-   * basic : 객체 생성과 소유, 객체 해제
+   * arc_basic : 객체 생성과 소유, 객체 해제
    * scope : 스코프에 의한 소유권 해제와 객체 해제
    * collection : 콜렉션에 의한 객체 소유와 해제
 - 객체 순환 참조(소유), 약한 참조
-   * referenceCycle : 강한 순환 참조로 인한 객체가 해제되지 않는 상황
+   * reference_cycle : 강한 순환 참조로 인한 객체가 해제되지 않는 상황
    * weak : 객체를 소유하지 않는 약한 참조(weak reference) 
    * unowned : 객체를 소유하지 않는 약한 참조 중 unowned
 

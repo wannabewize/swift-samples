@@ -1,3 +1,6 @@
+/**
+ * Property value-change Observing
+ */
 class Rectangle {
    var width = 0
    var height : Int = 0 {

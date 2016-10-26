@@ -1,3 +1,6 @@
+/**
+ * Designated, Convenience Initializer
+ */
 class MyClass {
    var a : Int
    var b : Int

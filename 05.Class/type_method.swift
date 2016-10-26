@@ -1,3 +1,6 @@
+/**
+ * 타입 메소드와 인스턴스 메소드
+ */
 class MyClass {
    var property = 0
    

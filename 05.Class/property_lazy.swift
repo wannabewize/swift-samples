@@ -1,3 +1,6 @@
+/**
+ * Lazy Initialized Property
+ */
 class Person {
    lazy var phone = Phone()
 }
