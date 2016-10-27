@@ -28,12 +28,12 @@ Swift3 Samples
    * valueType : 밸류 타입의 특징. 배열을 사용한 예제
 
 ## 02.제어문(Controls)
-- 반목문
+- 반복
    * for : for 반복문
    * while : while, repeat-while 반복문
    * label : label을 이용한 흐름 제어문
 
-- 조건문
+- 조건
    * if : if 조건문
    * switch-case : switch-case
    * guard : guard 
@@ -55,7 +55,6 @@ Swift3 Samples
    * nested_function : 함수 내부에 함수 정의하기
 
 ## 05.클래스(Class), 06.메소드
-
 - 클래스 정의, 객체 생성, 프로퍼티, 메소드
    * class_basic : 클래스 정의와 객체 생성, 프로퍼티
    * computed_property : 계산 프로퍼티
@@ -85,16 +84,15 @@ Swift3 Samples
 ## 08.클래스 상속(Inheritance)
 - 상속, 재정의
    * override : 상속과 재정의
-   * super_self  : 클래스 상속시 self, super 참조
-
+   * super_self  : 클래스 상속과 self, super 참조
    * initializer_inherite1 : Initializer 상속. 자식 클래스에 Designated Initializer를 작성하지 않은 경우
-   * initializer_in_child1 : 자식 클래스에 Designated Initializer 작성하기 
-   * initializer_in_child2 : 자식 클래스에 Convenience Initializer 작성하기  
-   * initializer_override1 : Initializer 재정의
+   * initializer_in_child : 자식 클래스에 Designated Initializer 작성하기 
+   * initializer_in_child_convenience : 자식 클래스에 Convenience Initializer 작성하기  
+   * initializer_override : Initializer 재정의
    * initializer_inherite2 : Initializer 상속. 자식 클래스에서 모든 Designated Initializer를 재정의하는 경우 Convenience Initializer 상속
    * two_phase_initialization : 2단계 초기화      
    * initializer_required : required Initializer
-   * initializer_override2 : Failable initializer 재정의
+   * initializer_override_failable : Failable initializer 재정의
    
 ## 09.구조체와 Enum
    * struct : 구조체, 프로퍼티와 메소드, Initializer
