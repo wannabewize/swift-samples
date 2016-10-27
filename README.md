@@ -128,7 +128,7 @@ Swift3 Samples
    * any : Any, AnyObject 타입. 동적인 타입 변경   
    * type_check : is를 이용한 타입 체크
    * type_cast : as를 이용한 타입 변환   
-   * typealias : 타입 알리아스
+   * type_alias : 타입 알리아스
    
 ## 13.에러 처리(Error Handling)
 - 에러 정의, 에러 다루기

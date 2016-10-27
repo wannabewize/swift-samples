@@ -28,12 +28,14 @@ class Cat : Animal {}
 
 let raz = Cat()
 
-let animal = raz as Animal // as 가능
+// Upcasting은 항상 성공. as 사용 가능
+let animal = raz as Animal
 
 
 // Dog 객체를 Animal 타입으로
 let obj : Animal = Dog()
-// Downcasting은 변환이 100% 가능하지 않다.
+
+// Downcasting 100% 가능하지 않으므로 as 사용 불가
 //let doggy1 = obj as Dog // 컴파일 에러
 let doggy2 = obj as? Dog // 변환 성공. 옵셔널 타입
 let doggy3 = obj as! Dog // 변환 성공. Non-Optional Type
