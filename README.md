@@ -1,7 +1,6 @@
 # Swift3 Samples
 Swift3 Samples
 
-현재 Swift2 -> Swift3 예제 작성 중
 
 ## 01.변수와 상수, 데이터타입(Data)
 - 변수와 상수, 타입
@@ -32,7 +31,6 @@ Swift3 Samples
    * for : for 반복문
    * while : while, repeat-while 반복문
    * label : label을 이용한 흐름 제어문
-
 - 조건
    * if : if 조건문
    * switch-case : switch-case
@@ -51,7 +49,7 @@ Swift3 Samples
    * parameter_defaultValue : 기본값을 가진 파라미터
    * parameter_varidic : 가변 길이 파라미터
    * parameter_inout : Inout 파라미터   
-   * optioanl : 파라미터나 반환으로 nil 다루기
+   * optioanl : 파라미터나 반환값으로 nil 다루기
    * nested_function : 함수 내부에 함수 정의하기
 
 ## 05.클래스(Class), 06.메소드
@@ -63,7 +61,7 @@ Swift3 Samples
 - Initializer, Deinit
    * innitializer : Designated Initializer
    * initializer_convenience : Convenince Initializer
-   * initializer_failalbe : Failable Initializer
+   * initializer_failable : Failable Initializer
    * deinit : Deinitializer 
 - 타입 메소드, 프로퍼티, 프로퍼티 감시
    * type_method : 타입 메소드
@@ -95,17 +93,19 @@ Swift3 Samples
    * initializer_override_failable : Failable initializer 재정의
    
 ## 09.구조체와 Enum
+- 구조체
    * struct : 구조체, 프로퍼티와 메소드, Initializer
    * struct_static : 타입 프로퍼티와 메소드
    * struct_mutation : 밸류 타입 상태 변경
    * value_reference_type : 밸류 타입과 레퍼런스 타입 비교
+- Enum   
    * enum: Enum 정의, switch, rawvalue
    * enum_method : Enum에 메소드, 프로퍼티 작성
    * enum_association : Enum과 Association
+- 중첩 타입   
    * nested_type : 중첩 타입
    
 ## 10.프로토콜(Protocol)
-- 프로토콜
    * protocol_basic : 프로토콜 선언, 클래스와 구조체 채택
    * static_method : 프로토콜 내 타입 메소드
    * property : 프로토콜 내 프로퍼티 선언
@@ -149,9 +149,11 @@ Swift3 Samples
    * custom_type_generics : 제네릭스로 타입 추상화된 함수와 타입 작성하기
 
 ## 16.Operator
+- 연산자
    * overloading : 연산지 오버로딩
    * equal : 객체 비교 연산자 오버로딩
    * custom_operator : 새로운 연산자 선언, 정의
+- 첨자 표기법   
    * subscript : 첨자 표기   
 
 ## 17.접근 조절
