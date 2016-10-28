@@ -192,7 +192,9 @@ Swift3 Samples
 - 파일 다루기
    * fm_list : 파일 매니저로 파일 목록
    * fm_copyremove : 파일 매니저로 파일 존재 확인/복사/삭제
-   * fm_read : FileHandler로 파일 내용 읽기/쓰기   
+   * fm_read : FileHandler로 파일 내용 읽기/쓰기
+- 데이타
+   * data_base64 : Data를 이용한 Base64 인코딩/디코딩
 - 직렬화
    * archive1 : NSKeyedArchiver, Unarchiver
    * archive2 : Custom Class, NSCoding
