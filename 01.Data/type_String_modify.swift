@@ -1,15 +1,12 @@
 let str = "Hello Swift"
 
-let start = str.startIndex
-let last = str.index(before: str.endIndex) // 마지막 -1
-
-print("start : ", start, "end : ", str.endIndex, " last : ", last)
+let start = str.startIndex // 마지막 -1
+let last = str.index(before: str.endIndex)
 
 let index3 = str.index(str.startIndex, offsetBy: 3)
-print(index3)
 
 let index7 = str.index(str.endIndex, offsetBy: -4, limitedBy: str.startIndex)!
-print(index7)
+
 
 // 부분 문자/문자열
 let char = str[index3] // "l", Character Type
@@ -60,3 +57,17 @@ let range = str3.index(str3.startIndex, offsetBy:5)..<str3.endIndex
 // "Hello"
 str3.removeSubrange(range)
 print(str3)
+
+
+//
+// trimming
+//
+
+// String 공백 문자 제거
+let spaceStr = " Hello Swift "
+let trimmed = spaceStr.trimmingCharacters(in: CharacterSet.whitespaces)
+
+let dashStr = "--Hello Swift!-"
+let chSet = CharacterSet(charactersIn: "-")
+let trimmed2 = dashStr.trimmingCharacters(in: chSet)
+print(trimmed2)

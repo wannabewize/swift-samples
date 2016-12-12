@@ -17,12 +17,11 @@ let str2 = "h"
 print(str1 < str2)
 
 
-/*
-* Foundation Framework
-*/
-
+//
+// 파운데이션(Foundation) Framework 로딩
 import Foundation
-// 비교(compare). Foundation
+
+// compare를 이용한 비교. 파운데이션 프레임워크가 제공
 
 let numStr1 = "1"
 let numStr2 = "09"

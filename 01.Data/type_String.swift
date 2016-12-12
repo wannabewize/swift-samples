@@ -51,13 +51,11 @@ print("charVal type : ", type(of : charVal))
 print("strFromVal type :", type(of : strFromChar))
 
 
-
-/*
-* Foundation Framework
-*/
+//
+// 파운데이션(Foundation) Framework 로딩
 import Foundation
 
-// 포맷 문자열 생성
+// 포맷 문자열 생성 - 파운데이션 프레임워크 제공
 let formatted1 = String(format:"%03d", 12)
 print("Formatted String(03d) : ", formatted1)
 
