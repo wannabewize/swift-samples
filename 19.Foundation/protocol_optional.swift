@@ -16,6 +16,13 @@ class MyClass : NSObject, Baking {
    }
    
    // makeDough 구현 안함
+   func makeDough() {
+       print("도우 굽기")
+   }
    
    // duration 구현 안함
 }
+
+let obj = MyClass()
+obj.baking()
+obj.makeDough()
