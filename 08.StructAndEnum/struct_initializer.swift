@@ -1,8 +1,6 @@
 struct MyStruct {
    var value : Int
 
-   func otherJob() {}
-
    // Designated Initializer
    init(v : Int) {
       self.value = v
