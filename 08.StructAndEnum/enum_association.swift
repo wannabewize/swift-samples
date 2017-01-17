@@ -3,16 +3,16 @@
  */
 
 enum ArrivalStatus {
-   case OnTime
-   case Dalay(Int)
+   case onTime
+   case delay(Int)
 }
 
-var flight = ArrivalStatus.Dalay(1)
+var flight = ArrivalStatus.delay(1)
 
 
 switch flight {
-case .OnTime:
+case .onTime:
    print("제때 도착")
-case .Dalay(let hour):
+case .delay(let hour):
    print("지연 시각 \(hour)")
 }

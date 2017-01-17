@@ -1,24 +1,22 @@
 enum Day {
-   case AM
-   case PM
+   case am
+   case pm
 }
 
 var now : Day
-now = Day.AM
+now = Day.am
 
 switch now {
-case .AM:
+case .am:
    print("오전")
-case .PM:
+case .pm:
    print("오후")
 }
 
 // RawValue
 
 enum Pet : Int {
-   case Cat = 0
-   case Dog
-   case Other
+   case cat = 0, dog, other
 }
 
 // rawValue에서 enum얻기
@@ -26,5 +24,5 @@ var ael = Pet(rawValue: 0)!
 print(ael)
 
 // enum에서 rawValue 얻기
-var raz = Pet.Cat
+var raz = Pet.cat
 print("Pet.cat : rawValue : ", raz.rawValue) // 0

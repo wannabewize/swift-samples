@@ -3,15 +3,13 @@
  */
 
 enum Pet : Int {
-   case Cat = 0
-   case Dog
-   case Other
+   case cat = 0, dog, other
    
    var name : String {
       switch self {
-      case .Cat:
+      case .cat:
          return "고양이"
-      case .Dog:
+      case .dog:
          return "강아지"
       default:
          return "기타"
@@ -24,6 +22,6 @@ enum Pet : Int {
 }
 
 // 프로퍼티와 메소드 사용
-var raz = Pet.Cat
+var raz = Pet.cat
 print(raz.name)
 print(raz.description())
