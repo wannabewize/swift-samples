@@ -21,21 +21,6 @@ print("beverage.contains(Sprite) : ", beverage.contains("Sprite"))
 
 print("beverage.first : ", beverage.first)
 
-
-let index = beverage.startIndex
-print("beverage[index] : ", beverage[index])
-let index1 = beverage.index(after: beverage.startIndex)
-print("beverage[index.successor()] : ", beverage[index1])
-
-
-beverage.insert("Coke")
-print("beverage, after insert(Coke) : ", beverage)
-
-let beverageArray = Array(beverage)
-print("beverage->Array[0] : ", beverageArray[0])
-print("beverage->Array[1] : ", beverageArray[1])
-
-
 /*
  * Set 타입 예제
  */

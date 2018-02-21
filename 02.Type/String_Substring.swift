@@ -10,14 +10,16 @@ let startIndex: String.Index = str.startIndex
 // 문자열 인덱스를 이용해서 해당 문자(Character) 얻기
 let firstCharacter: Character = str[startIndex]
 
+print("첫번째 문자 \(firstCharacter)")
+
+
 // 에러 : endIndex는 범위를 벗어난다. -1 해서 사용
 let endIndex = str.endIndex
 //let endCharacter: Character = str[endIndex]
-
 // 인덱스 조절하기 index함수 사용
 let lastIndex = str.index(before: endIndex)
 let lastCharacter : Character = str[lastIndex]
-print("첫번째 문자 \(firstCharacter), 마지막 문자 : \(lastCharacter)")
+print("마지막 문자 : \(lastCharacter)")
 
 // 3번째 인덱스, 뒤에서 7번째 인덱스 얻기
 let index3 = str.index(str.startIndex, offsetBy: 3)

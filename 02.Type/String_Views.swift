@@ -3,8 +3,9 @@
 let str = "I ♥ Swift"
 print("str : ", str)
 
-let charViews : String.CharacterView = str.characters
-let charArray = Array(charViews)
+
+// Character의 집합(Collection)
+let charArray = Array(str)
 print("Character count :", charArray.count, " Character Array :", charArray)
 
 // UTF8
@@ -27,8 +28,7 @@ print("=====")
 let str2 = "🐶‼"
 print("str2 : ", str2)
 
-let charViews2 : String.CharacterView = str2.characters
-let charArray2 = Array(charViews2)
+let charArray2 = Array(str2)
 print("Character count :", charArray2.count, " Character Array :", charArray2)
 
 // UTF8

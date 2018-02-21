@@ -2,16 +2,7 @@
 Swift4 Samples
 
 ## 01.Data
-값과 변수, 상수
-- 값(Literal)
-   * Literal_Number : 숫자 형태의 값
-   * Literal_String : 문자 형태의 값
-   * Literal_Range : 범위 형태의 값
-- 변수와 상수
-   * Variable : var를 이용한 변수
-   * Constant : let을 이용한 상수
-   * Statement : 문장 작성 방법
-   * Print : print() 함수를 이용해서 정보 출력하기
+값과 변수, 상수, 문장 작성 방법
 
 ## 02.Type
 기본 타입과 콜렉션 타입, 커스텀 타입
