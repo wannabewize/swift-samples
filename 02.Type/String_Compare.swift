@@ -4,7 +4,7 @@
 
 let str = "Hello Swift"
 if str == "Hello Swift" {
-   print("같은 문자열")
+    print("같은 문자열")
 }
 
 print("hasPrefix(Hello) : ",str.hasPrefix("Hello"))
@@ -34,3 +34,4 @@ print(ret2 == .orderedAscending)
 
 let ret3 = "hello".compare("HELLO", options: .caseInsensitive, range: nil, locale: nil) // orderedSame
 print(ret3 == .orderedSame)
+

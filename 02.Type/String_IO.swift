@@ -3,7 +3,8 @@ import Foundation
 let str = "Hello Swift"
 
 // 파일로 저장
-let filePath = "/Users/wannabewize/Projects/Lecture/Swift-Samples/Sandbox/str.txt"
+let filePath = "/Users/wannabewize/Documents/str.txt"
+///Users/wannabewize
 do {
    try str.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
 }

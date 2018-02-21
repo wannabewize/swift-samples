@@ -1,23 +1,38 @@
-# Swift3 Samples
-Swift3 Samples
+# Swift4 Samples
+Swift4 Samples
 
-## 01.변수와 상수, 데이터타입(Data)
-- 변수와 상수, 타입
-   * variable : 변수
-   * constant : 상수
+## 01.Data
+값과 변수, 상수
+- 값(Literal)
+   * Literal_Number : 숫자 형태의 값
+   * Literal_String : 문자 형태의 값
+   * Literal_Range : 범위 형태의 값
+- 변수와 상수
+   * Variable : var를 이용한 변수
+   * Constant : let을 이용한 상수
+   * Statement : 문장 작성 방법
+   * Print : print() 함수를 이용해서 정보 출력하기
+
+## 02.Type
+기본 타입과 콜렉션 타입, 커스텀 타입
+
 - 기본 타입
-   * typeInfo : 타입 정보 얻기
    * Bool : 부울 타입
    * Int : 정수형 타입
    * Float : 실수형 타입
    * Character : Character 타입
    * String : 문자열 타입
-   * String_compare : 문자열 비교
-   * String_modify : 문자열 수정
+   * String_Substring : 부분 문자열
+   * String_Modify : 문자열 수정
+   
+
+- 작업중
+   * String_compare : 문자열 비교   
    * String_substring : 
-   * String_operation : 문자열 인덱스(String.Index)를 이용한 문자열 다루기
    * String_views : 문자열과 뷰
    * String_IO : 문자열 저장/읽기
+   * typeInfo : 타입 정보 얻기
+
 - 다수의 데이터 다루기
    * Tuple : 튜플
    * Array : 배열

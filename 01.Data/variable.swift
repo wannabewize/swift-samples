@@ -1,40 +1,30 @@
-// 변수 선언하기 - 타입 선언 생략
-var intVar = 10
+/*
+* 변수
+*/
 
-// 타입 선언과 함께 변수 선언
-var varWithType : Int = 20
+// 값과 함게 변수 선언
+var value = 10
 
-// 변수의 값 변경하기
-intVar = 30
-print(intVar)
+// 변수의 값은 변경 가능
+value = 20
 
-// 실수형 변수 선언 - 타입 선언 생략 시 실수형 기본 타입은 Float
-var floatVar = 3.14
-// Double 타입으로 변수 선언
-var doubleVar : Double = 3.14
+// 예약어를 변수로 사용하기
+var `default` = 1
+var `var` = "Variable"
 
-var intVar2 : Int
-intVar2 = 10
-print(intVar2)
+// 변수의 타입 작성
+var value2: Int = 10
 
-//
-// 타입 에러
-//
+// 초기값 없이 변수 선언. 단 타입 선언 필요
+var value3 : Int
+value3 = 10
 
-// error : cannot assign value of type 'Double' to type 'Int'
-//intVar = 3.14
+// 초기화되지 않은 변수 사용은 에러
+var value4 : Int
+// error: variable 'value4' used before being initialized
+// print(value4)
 
-// error : cannot convert value of type 'Double' to specified type 'Int'
-//var intVar3 : Int = 3.14 
-
-// error: cannot assign value of type 'Double' to type 'Int'
-// var floatVar = 3.14
-//intVar = floatVar
-
-//
-// 초기화 되지 않은 변수 사용 에러
-//
-
-// error : variable 'uninitalizedVar' used before being initialized
-// var uninitalizedVar : Int
-// print(uninitalizedVar)
+// 타입이 다른 값을 대입하면 에러
+var value5: Int = 10
+// error: cannot assign value of type 'String' to type 'Int'
+// value5 = "10"
