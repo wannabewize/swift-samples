@@ -8,7 +8,6 @@
    * Literal_Range : 범위값
    
 ## 변수와 상수
-   * Variable : 변수
-   * Constant : 상수
+   * VarAndConstant : 변수와 상수
    * Print : 콘솔에 값 출력하기
    * Statement : Swift 코드 문장 작성하기

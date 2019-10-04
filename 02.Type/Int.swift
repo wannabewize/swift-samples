@@ -77,10 +77,10 @@ print("Int From HexString(1F4) : ", intFromHexStr!)
 print("Int From OctString(123) : ", intFromOctStr!)
 print("Int From BinString(1010) : ", intFromBinStr!)
 
-// 변환에 실패하면 nil
+// 변환에 실패하면 nil. 옵셔널
 let intFromOctStrFail = Int("1F5", radix: 8)
 print("Int From OctString Fail : ", intFromOctStrFail)
 
-// 문자가 포함된 문자열 Int 변환 실패 - nil
+// 문자가 포함된 문자열 Int 변환 실패 nil. 옵셔널
 let intFromStrFail = Int("1234a")
 print("Int From String Fail : ", intFromStrFail)

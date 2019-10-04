@@ -28,3 +28,17 @@ var value4 : Int
 var value5: Int = 10
 // error: cannot assign value of type 'String' to type 'Int'
 // value5 = "10"
+
+
+/*
+* 상수
+*/
+
+// 값 대입 후 변경 불가
+let constant = 10
+// Error : 상수의 값은 변경 불가
+// constant = 20
+
+// 타입과 함께 상수 선언과 바인딩 분리
+let constant2 : Float
+constant2 = 1.23

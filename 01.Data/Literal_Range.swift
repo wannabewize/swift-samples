@@ -5,7 +5,8 @@
 // 숫자 범위 리터럴
 let closedRange = 1...10
 let halfOpenRange = 1..<10
-print("closedRange :", closedRange, "halfOpenRange :", halfOpenRange)
+print("closedRange :", closedRange)
+print("halfOpenRange :", halfOpenRange)
 
 // 열린 범위
 let oneSideRange1 = 1...
@@ -13,7 +14,7 @@ let oneSideRange2 = ..<10
 print(oneSideRange1)
 print(oneSideRange2)
 
-// 실수 열린 범위
+// 실수형 열린 범위
 let doubleRange = 1.1...2.2
 print(doubleRange)
 

@@ -3,36 +3,48 @@
 */
 
 // 문자형 리터럴
-"a"
-"hello"
-"1"
+let str1 = "a"
+let str2 = "hello"
+let str3 = "1"
+
+print(str1)
+print(str2)
+print(str3)
 
 // String Interpolation
 
-"1 + 2 = \(1+2)"
+let str4 = "1 + 2 = \(1+2)"
+
+print(str4)
 
 // """을 이용한 다열(Multiline) 문자열
 // a/nb
-"""
-a
-b
-"""
+let str5 = """
+           a
+           b
+           """
+
+print(str5)
 
 // a/n b
-"""
-a
- b
-"""
+let str6 = """
+           a
+            b
+           """
+
+print(str6)
 
 // 에러
 /*
-"""
-a
-b
- """
-*/
+let str7 = """
+           a
+           b
+            """
+ print(str7)
+ */
 
 // Error. 다열 문자열(""")을 한줄에 작성하면 에러
 /*
-""" abc """
+let str8 = """ abc """
+print(str8)
 */
