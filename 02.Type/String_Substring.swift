@@ -13,10 +13,11 @@ let firstCharacter: Character = str[startIndex]
 print("첫번째 문자 \(firstCharacter)")
 
 
-// 에러 : endIndex는 범위를 벗어난다. -1 해서 사용
+// 에러 : endIndex를 바로 사용하면 범위를 벗어난다. -1 해서 사용
 let endIndex = str.endIndex
 //let endCharacter: Character = str[endIndex]
-// 인덱스 조절하기 index함수 사용
+
+// 인덱스 이동하기 index함수 사용
 let lastIndex = str.index(before: endIndex)
 let lastCharacter : Character = str[lastIndex]
 print("마지막 문자 : \(lastCharacter)")

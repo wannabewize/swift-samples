@@ -11,7 +11,7 @@ value2 = false
 // Bool타입 상수
 let value3: Bool = true
 
-// 문자열 "true"/"false" 에서 타입 변환 (옵셔널)
+// 문자열 "true", "false" 에서 타입 변환 (옵셔널)
 let value4 = Bool("true")
 print("Bool(\"true\") : ", value4!)
 

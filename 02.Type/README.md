@@ -13,7 +13,7 @@
   * String_Modify : 문자열 수정
   * String_compare : 문자열 비교   
   * String_Substring : 부분 문자열 얻기
-  * String_views : 문자열과 뷰
+  * String_Views : 문자열과 뷰
   * String_Founcation : 파운데이션 프레임워크가 제공하는 문자열의 추가 기능
   * String_IO : 문자열 저장/읽기. Foundation 필요
   * TypeOf : 타입 정보 얻기

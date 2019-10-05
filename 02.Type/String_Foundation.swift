@@ -1,7 +1,10 @@
 // 파운데이션(Foundation) Framework 로딩
 import Foundation
 
-print("## 포맷 문자열 만들기")
+/**
+ * 포맷 문자열 만들기 : String(format:)
+ */
+
 
 // 포맷 문자열 생성 - 파운데이션 프레임워크 제공
 let formatted1 = String(format:"%03d", 12)
@@ -17,7 +20,9 @@ let formatted4 = String(format: "%@, %@", "Hello", "Swift")
 print("formatted String : ", formatted4)
 
 
-print("## compare를 이용한 문자열 비교")
+/*
+ * 문자열 비교, 비교 옵션 : compare
+ */
 
 // compare를 이용한 비교. 파운데이션 프레임워크가 제공
 let numStr1 = "1"
@@ -31,3 +36,20 @@ print(ret2 == .orderedAscending)
 
 let ret3 = "hello".compare("HELLO", options: .caseInsensitive, range: nil, locale: nil) // orderedSame
 print(ret3 == .orderedSame)
+
+
+/**
+ * 트리밍 : trimmingCharacters
+ */
+
+// 공백 문자 트리밍
+let spaceStr = " Hello Swift "
+let trimmed = spaceStr.trimmingCharacters(in: CharacterSet.whitespaces)
+print("Trimming WhiteSpace : ", trimmed)
+
+// 특정 문자 트리밍
+let dashStr = "--Hello Swift!-"
+// 트리밍할 문자셋
+let chSet = CharacterSet(charactersIn: "-")
+let trimmed2 = dashStr.trimmingCharacters(in: chSet)
+print("Trimming specipic Character : ",trimmed2)
