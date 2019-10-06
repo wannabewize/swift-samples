@@ -6,10 +6,10 @@
 // var i : Int = nil
 // Optional Type
 
-var optionalVar : Optional<Int> = nil
-var optionalVar2 : Int? = nil
-print("nil 대입된 변수 : ",optionalVar, optionalVar2)
+var optionalVar : Int? = nil
+var optionalVar2 : Optional<Int> = nil
 
+print("nil 대입된 변수 : ",optionalVar, optionalVar2)
 
 // 타입 변환시 발생하는 nil
 let intFromStr = Int("a") // Int? 타입

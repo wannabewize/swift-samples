@@ -57,16 +57,17 @@ if let val1 = nilAvailableStr, let val2 = Int(val1) {
 // guard를 사용한 옵셔널 바인딩
 //
 
-func example2() {
-   guard let val = nilAvailable else {
-      print("val은 nil")
+func doIt(_ arg: Int?) {
+   guard let val = arg else {
+      print("입력값은 nil")
       return;
    }
    
    // val 에 접근하기
-   print("val은 유효한 값 : \(val)")
+   print("입력값은 유효한 값 : \(val)")
 }
-example2()
+doIt(1)
+doIt(nil)
 
 func bindingWithCondition() {
    guard let val = nilAvailable, val > 0 else {

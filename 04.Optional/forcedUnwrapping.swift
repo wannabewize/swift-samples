@@ -1,9 +1,9 @@
 /*
  * 강제 언래핑
  */
-let intVal1 = Int("1") // Int?
+let intVal1: Int? = Int("1") // Int?
 print(intVal1)
-let intVal2 = Int("1")! // Int 타입
+let intVal2: Int = Int("1")! // Int 타입
 print(intVal2)
 
 let intVal3 = Int("A") // nil
@@ -11,7 +11,7 @@ print(intVal3)
 //let intVal4 = Int("A")! // Error
 
 let dictionary = ["one":1, "two":2]
-let two = dictionary["two"]! // non-optional Int 타입
+let two: Int = dictionary["two"]! // non-optional Int 타입
 print("two in Dictionary : ", two)
 
 //let three = dictionary["three"]! // Error
