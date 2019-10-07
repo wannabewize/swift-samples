@@ -1,3 +1,19 @@
+struct MyStruct {
+    var value1: Int
+    
+    var value2: Int = 0
+    
+    var value3: Int?
+    
+    var value4: Int!
+    
+    init() {
+        value1 = 0
+    }
+}
+
+let p = MyStruct()
+
 /*
  * 구조체 - Initializer
  */

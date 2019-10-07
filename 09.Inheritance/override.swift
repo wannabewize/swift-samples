@@ -34,7 +34,6 @@ class Square : Rectangle {
    }
 }
 
-
 var square = Square()
 square.width = 90
 square.height = 100

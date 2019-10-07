@@ -3,7 +3,7 @@
 */
 class Person {
    // 상수
-   let thisYear = 2016
+   let thisYear = 2019
 
    // 저장 프로퍼티
    var birthYear : Int = 0
