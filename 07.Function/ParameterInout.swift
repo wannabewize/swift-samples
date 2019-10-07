@@ -22,5 +22,5 @@ var value2 = 2
 
 swapTwoValue(&value1, &value2)
 
-value1	// 2
-value2	// 1
+print("value1 :", value1)    // 2
+print("value2 :", value2)    // 1

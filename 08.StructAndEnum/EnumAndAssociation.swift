@@ -9,7 +9,6 @@ enum ArrivalStatus {
 
 var flight = ArrivalStatus.delay(1)
 
-
 switch flight {
 case .onTime:
    print("제때 도착")

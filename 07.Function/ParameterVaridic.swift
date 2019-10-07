@@ -12,7 +12,11 @@ func addAll(_ values : Int...) -> Int {
    }
 }
 
-addAll()
-addAll(1)
-addAll(1, 2, 3) 	// 6
+let ret1 = addAll()
+print("ret1:", ret1)
 
+let ret2 = addAll(1)
+print("ret2:", ret2)
+
+let ret3 = addAll(1, 2, 3)     // 6
+print("ret3:", ret3)

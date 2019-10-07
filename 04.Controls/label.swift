@@ -8,8 +8,8 @@ let upper = "ABCDEF"
 print("== Without Label")
 
 for i in 0...5 {
-   for j in lower.characters {
-      for k in upper.characters {
+   for j in lower {
+      for k in upper {
          if k == "C" {
             break
          }
@@ -21,8 +21,8 @@ for i in 0...5 {
 print("== With Label")
 
 loop1 : for i in 0...5 {
-   loop2 : for j in lower.characters {
-      for k in upper.characters {
+   loop2 : for j in lower {
+      for k in upper {
          if k == "C" {
             break loop2
          }

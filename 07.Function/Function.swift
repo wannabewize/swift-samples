@@ -29,7 +29,7 @@ let drink = favoriteDrink() // "Coffee"
 
 
 func random3() -> (Int, Int, Int) {
-   // 난수값 생성 함수 : arc4random. Foundation 프레임워크
+   // 난수값 생성 함수 : arc4random. Foundation 프레임워크 필요
    let r1 = Int(arc4random() % 10)
    let r2 = Int(arc4random() % 10)
    let r3 = Int(arc4random() % 10)

@@ -5,7 +5,7 @@
 let ch : Character = "a"
 
 let scalar : Unicode.Scalar = ch.unicodeScalars.first!
-print("a unicode.scalar.value : " scalar.value) // 97
+print("a unicode.scalar.value : ", scalar.value) // 97
 
 let ch2 : Character = "\u{61}" // 10진수 97
 print("61 : ",ch2)

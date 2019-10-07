@@ -15,12 +15,3 @@ let str1 = "H"
 let str2 = "h"
 
 print("H < h :", str1 < str2)
-
-import Foundation
-
-let helloStr1 = "HELLO"
-let helloStr2 = "hello"
-
-if helloStr1.compare(helloStr2) == .orderedAscending {
-   print("오름차순")
-}

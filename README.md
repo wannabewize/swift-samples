@@ -4,51 +4,135 @@ Swift5 Samples
 ## 01.Data
 값과 변수, 상수, 문장 작성 방법
 
-## 02.Type
-기본 타입과 콜렉션 타입, 커스텀 타입
-
-## 03.제어문(Controls)
-- 반복
-   * for : for 반복문
-   * while : while, repeat-while 반복문
-   * label : label을 이용한 흐름 제어문
-- 조건
-   * if : if 조건문
-   * switch-case : switch-case
-   * guard : guard 
-   * version-check : #avilable을 이용한 플랫폼, 버전 체크
+###  리터럴
+* Literal_Number : 숫자형 값
+* Literal_String : 문자형 값
+* Literal_Range : 범위값
+* Nil : nil
    
-## 03.옵셔널(Optional)
-   * optional : 옵셔널 타입, 옵셔널 체d인, ?? 연산자
-   * optional_binding : if와 guard를 이용한 옵셔널 바인딩
-   * forcedUnwrapping : 강제 언래핑, 암시적 언래핑 옵셔널 타입(IUO)
+### 변수와 상수
+* VarAndConstant : 변수와 상수
+* Print : 콘솔에 값 출력하기
+* Statement : Swift 코드 문장 작성하기
 
-## 04.함수(Function)
-   * function : 함수 기본, 반환값
-   * parameter : 함수 파라미터, 외부 파라미터 설정
-   * overloading : 같은 함수 이름 but 다른 함수 파라미터 타입, 다른 외부 파라미터 이름.
-   * parameter_defaultValue : 기본값을 가진 파라미터
-   * parameter_varidic : 가변 길이 파라미터
-   * parameter_inout : Inout 파라미터   
-   * optioanl : 파라미터나 반환값으로 nil 다루기
-   * nested_function : 함수 내부에 함수 정의하기
+### 연산자
+* Operator : 연산자
 
-## 05.클래스(Class), 06.메소드
-- 클래스 정의, 객체 생성, 프로퍼티, 메소드
-   * class_basic : 클래스 정의와 객체 생성, 프로퍼티
-   * computed_property : 계산 프로퍼티
-   * reference_type : 레퍼런스 타입 객체
-   * method.swift : 메소드 정의와 호출
-- Initializer, Deinit
-   * innitializer : Designated Initializer
-   * initializer_convenience : Convenince Initializer
-   * initializer_failable : Failable Initializer
-   * deinit : Deinitializer 
-- 타입 메소드, 프로퍼티, 프로퍼티 감시
-   * type_method : 타입 메소드
-   * type_property : 타입 프로퍼티
-   * property_observing : 프로퍼티 감시
-   * property_lazy : 늦은 프로퍼티 초기화
+## 02.기본 타입(Type)
+Swift의 기본 타입
+
+* Bool : 부울 타입
+* Int : 정수형 타입
+* Float : 실수형 타입
+* Character : Character 타입
+* String : 문자열 타입
+* String_Modify : 문자열 수정
+* String_Substring : 부분 문자열
+* String_Compare : 문자열 비교   
+* String_Views : 문자열과 뷰
+* String_Founcation : 파운데이션 프레임워크 - 포맷 문자열 생성, 문자열 비교, 트리밍, 찾기
+* String_IO : 문자열 저장/읽기. Foundation 필요
+* Range : Range, ClosedRange, CountableRange, PartialRangeThrough 타입
+* TypeOf : 타입 정보 얻기
+* Unicode : 유니코드 다루기(작성중)
+
+## 03. 다수의 데이터 다루기(CollectionType)
+다수의 데이터를 다루는 타입
+
+* Tuple : 튜플
+* Array : 배열
+* Dictionary : 딕셔너리
+* Set : 셋
+* ComplexCollection : 복합 콜렉션 타입
+* ValueType : 밸류 타입
+
+## 04.제어문(Controls)
+Swift의 반복, 조건문
+
+### 반복
+* for : for 반복문
+* while : while, repeat-while 반복문
+* label : label을 이용한 흐름 제어문
+
+### 조건
+* if : if 조건문
+* guard : guard
+* switch_case : switch-case
+* version-check : #avilable을 이용한 플랫폼, 버전 체크
+   
+## 05.옵셔널(Optional)
+
+* Optional : 옵셔널 타입
+* NilCheck : nil 여부 확인하기
+* ForcedUnwrapping: 강제 언래핑
+* OptionalBinding : 옵셔널 바인딩, if/guard 사용
+* NilCoalescing : nil 병합 연산자 ??
+* OptionalChain : 옵셔널 체인
+* IUO : 암시적 언래핑 옵셔널(Implicitly Unwrapped Optional)
+
+## 06.커스텀 타입(CustomType)
+커스텀 타입 정의하기
+
+* Struct : 구조체로 커스텀 타입 정의하기
+* Class : 클래스로 커스텀 타입 정의하기
+* Enum : Enum으로 커스텀 타입 정의하기
+* Complex : 복합 타입 정의
+* Typealias : 타입 별칭 정하기
+* ValueAndReferenceType : 밸류 타입, 레퍼런스 타입
+
+## 07.함수(Function)
+함수 정의와 실행하기
+
+* Function : 함수 정의, 실행하기, 반환값
+* Parameter : 함수 파라미터, 외부 파라미터 설정
+* overloading : 같은 함수 이름 but 다른 함수 파라미터 타입, 다른 외부 파라미터 이름.
+* ParameterDefaultValue : 기본값을 가진 파라미터
+* ParameterVaridic : 가변 길이 파라미터
+* ParameterInout : Inout 파라미터   
+* OptionalParamReturn : 파라미터나 반환값으로 nil 다루기
+* NestedFunction : 함수 내부에 함수 정의하기
+
+## 08.구조체와 Enum
+
+### 프로퍼티
+* StoredAndComputedProperty : 저장 프로퍼티, 연산 프로퍼티
+* PropertyChange : 프로퍼티 변경 감지
+
+### 구조체
+
+* StructAndMethod : 구조체와 메소드
+* StructAndMutating : Mutatable 메소드 작성
+* StructAndStaticMethod : 정적 메소드와 정적 프로퍼티
+* StructAndInitializer : 구조체 초기화
+
+### Enum 타입
+
+* EnumAndMethod : Enum 타입과 메소드
+* EnumAndAssociation : Enum과 Association Value
+
+* NestedType : 중첩 타입
+* ImmutableAndMutable : Mutable API, Immutable API
+   
+
+## 05.클래스(Class)
+
+### 클래스 정의, 객체 생성, 프로퍼티, 메소드
+* class_basic : 클래스 정의와 객체 생성, 프로퍼티
+* computed_property : 계산 프로퍼티
+* reference_type : 레퍼런스 타입 객체
+* method.swift : 메소드 정의와 호출
+
+### Initializer, Deinit
+* innitializer : Designated Initializer
+* initializer_convenience : Convenince Initializer
+* initializer_failable : Failable Initializer
+* deinit : Deinitializer 
+
+### 타입 메소드, 프로퍼티, 프로퍼티 감시
+* type_method : 타입 메소드
+* type_property : 타입 프로퍼티
+* property_observing : 프로퍼티 감시
+* property_lazy : 늦은 프로퍼티 초기화
 
 ## 06.클래스 상속(Inheritance)
 - 상속, 재정의
@@ -73,18 +157,7 @@ Swift5 Samples
    * weak : 객체를 소유하지 않는 약한 참조(weak reference) 
    * unowned : 객체를 소유하지 않는 약한 참조 중 unowned
 
-## 08.구조체와 Enum
-- 구조체
-   * struct : 구조체, 프로퍼티와 메소드, Initializer
-   * struct_static : 타입 프로퍼티와 메소드
-   * struct_mutation : 밸류 타입 상태 변경
-   * value_reference_type : 밸류 타입과 레퍼런스 타입 비교
-- Enum   
-   * enum: Enum 정의, switch, rawvalue
-   * enum_method : Enum에 메소드, 프로퍼티 작성
-   * enum_association : Enum과 Association
-- 중첩 타입   
-   * nested_type : 중첩 타입
+
 
 ## 09.클로저(Closure)
    * function_object : 함수를 객체로 다루기

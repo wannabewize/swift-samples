@@ -1,3 +1,7 @@
+/**
+ * 커스텀 타입의 조합
+ */
+
 class Music {
     var title: String?
     var artist: String?
