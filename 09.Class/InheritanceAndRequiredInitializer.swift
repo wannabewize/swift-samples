@@ -38,8 +38,6 @@ class Child : Parent {
 }
 
 
-
-
 // 자식 클래스에서 required 조건으로 재정의한 Designated Initializer로 객체 생성
 var obj1 = Child(a: 10, b : 20)
 
