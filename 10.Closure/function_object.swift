@@ -14,3 +14,10 @@ sayHello()
 let hello = sayHello
 hello()
 
+
+// hello 함수의 함수 타입
+let fn1: () -> ()  = sayHello
+fn1()
+
+let fn2: () -> Void = sayHello
+fn2()
