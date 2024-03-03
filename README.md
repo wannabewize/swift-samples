@@ -1,5 +1,4 @@
-# Swift5 Samples
-Swift5 Samples
+# Swift Samples
 
 ## 01.Data
 값과 변수, 상수, 문장 작성 방법
