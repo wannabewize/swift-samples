@@ -3,31 +3,31 @@
  */
 
 enum CustomError : Error {
-   case MyFault
-   case YourFault
+   case myFault
+   case yourFault
 }
 
 do {
-   throw CustomError.MyFault
+   throw CustomError.myFault
 }
 catch {
    print("에러 발생")
 }
 
 do {
-   throw CustomError.YourFault
+   throw CustomError.yourFault
 }
 catch let error {
    print("Error :", error)
 }
 
 do {
-   throw CustomError.YourFault
+   throw CustomError.yourFault
 }
-catch CustomError.MyFault {
+catch CustomError.myFault {
    print("내탓")
 }
-catch CustomError.YourFault {
+catch CustomError.yourFault {
    print("남탓")
 }
 

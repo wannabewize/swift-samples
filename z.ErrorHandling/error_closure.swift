@@ -3,13 +3,13 @@
  */
 
 enum CustomError : Error {
-   case MyFault
-   case YourFault
+   case myFault
+   case yourFault
 }
 
 // 예외가 발생하는 함수
 func dangerousFunction() throws {
-   throw CustomError.YourFault
+   throw CustomError.yourFault
 }
 
 // 예외가 발생하는 함수를 파라미터 선언
@@ -27,7 +27,7 @@ doIt(dangerousFunction)
 
 // inline 방식
 doIt { 
-   throw CustomError.MyFault
+   throw CustomError.myFault
 }
 
 
@@ -54,7 +54,7 @@ func doIt3(_ arg : () throws -> () ) rethrows {
 
 do {
    try doIt3 {
-      throw CustomError.MyFault
+      throw CustomError.myFault
    }
 }
 catch let error {
