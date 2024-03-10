@@ -42,3 +42,4 @@ let constant = 10
 // 타입과 함께 상수 선언과 바인딩 분리
 let constant2 : Float
 constant2 = 1.23
+

@@ -14,19 +14,7 @@ Swift 코드 특징
 
 ## Literal
 
-Swift의 값
-
-### Literal_Number
-
-숫자형 값
-
-### Literal String
-
-문자 타입의 값
-
-### Literal Range
-
-범위 타입의 값
+Swift의 값 표현
 
 ## Var and Constant
 
