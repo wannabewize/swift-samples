@@ -1,10 +1,19 @@
 # 01.Data
 
+데이터 다루기
+
 ## Statement
 
 Swift 코드 특징
 
-- Statement.swift
+- Statement.playground
+
+## Literal
+
+Swift의 값 표현
+
+- Literals.playground
+
 
 ## Print
 
@@ -12,9 +21,6 @@ Swift 코드 특징
 
 - Print.swift
 
-## Literal
-
-Swift의 값 표현
 
 ## Var and Constant
 
