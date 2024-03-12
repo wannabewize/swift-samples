@@ -16,6 +16,8 @@ print("Hello", value)
 // String interpolation을 이용한 출력
 print("Hello \(value)")
 
+let someValue = 100
+print("value는 100보다 \(someValue >= 100 ? "크거나 같다." : "작다")")
 
 // Custom Type의 객체 출력하기
 struct MyStruct {
@@ -31,4 +33,6 @@ struct WrapperStruct {
 
 let object2 = WrapperStruct(inner: MyStruct(value: 200))
 print("nested object \(object2)")
+
+
 
