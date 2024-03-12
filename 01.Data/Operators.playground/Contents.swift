@@ -1,5 +1,6 @@
 /*
 * Swift의 연산자
+* https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators
 */
 
 // 대입 연산자(Assignment Operator)
@@ -61,3 +62,8 @@ intValue++
 
 
 // 논리 연산자 : !a(not), a && b, a || b
+let notResult = !(1 < 2)
+let andResult = ( 1 < 2 ) && ( 2 < 3 )
+let orResult = (1 < 2 ) || ( 2 < 3)
+
+
